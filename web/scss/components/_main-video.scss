@@ -1,0 +1,18 @@
+.main-video {
+    padding: 60px 0;
+
+    &__title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__video {
+        width: 1064px;
+        height: 614px;
+        margin: 0 auto;
+    
+        &-container {
+          padding-bottom: 56%;
+        }
+    }
+}

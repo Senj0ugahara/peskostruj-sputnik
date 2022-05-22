@@ -1,0 +1,140 @@
+.hero {
+    position: relative;
+    padding: 40px 0 52px;
+    background: linear-gradient(90deg, #FFFFFF 64.99%, rgba(255, 255, 255, 0.778648) 80.55%, rgba(255, 255, 255, 0.616883) 84.5%, rgba(255, 255, 255, 0) 96.89%);
+    background-image: url(../images/hero-bg.png);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, #FFFFFF 64.99%, rgba(255, 255, 255, 0.778648) 80.55%, rgba(255, 255, 255, 0.616883) 84.5%, rgba(255, 255, 255, 0) 96.89%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -90px;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        background: linear-gradient(0deg, #F8F8F8 56.83%, rgba(248, 248, 248, 0.604167) 77.43%, rgba(248, 248, 248, 0) 87.98%);
+    }
+
+    &__container {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 800px;
+        margin-bottom: 130px;
+    }
+
+    &__subtitle {
+        position: relative;
+        margin: 0;
+        margin-bottom: 121px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: var(--text-color);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+    &__item {
+        padding: 0 0 17px 49px;
+        background-image: url(../images/hero-gear.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+
+        &_line {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-image: url(../images/hero-line.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+
+        &-title {
+            margin: 0;
+            margin-bottom: 5px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: var(--text-color);
+        }
+
+        &-desc {
+            margin: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: var(--text-color);
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: -20px;
+        right: 0;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+    &__buy {
+        align-items: center;
+    }
+
+    &__prices {
+        margin-right: 70px;
+    }
+
+    &__btn {
+        margin-right: 30px;
+    }
+
+    &__discount {
+        padding: 10px 50px 13px 26px;
+        background-image: url(../images/hero-discount-bg.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--black-color);
+
+        span {
+            font-weight: 700;
+            color: #EA2727;
+        }
+    }
+}

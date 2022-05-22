@@ -1,0 +1,104 @@
+.information {
+    padding: 50px 0;
+    &__title {
+        margin-bottom: 52px;
+        text-align: center;
+    }
+}
+
+.information-list {
+    &__item {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 70px 130px 70px 120px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &_left {
+            background-position: left;
+
+            .information-list__content {
+                margin-left: auto;
+            }
+        }
+        
+        &_1 {
+            background-image: url(../images/information/information-img1.png);
+            background-position: right 60px center;
+        }
+
+        &_2 {
+            background-image: url(../images/information/information-img2.png);
+            background-position: left 130px center;
+        }
+
+        &_3 {
+            background-image: url(../images/information/information-img3.png);
+            background-position: right 40px bottom;
+        }
+
+        &_4 {
+            background-image: url(../images/information/information-img4.png);
+        }
+
+        &_5 {
+            background-image: url(../images/information/information-img5.png);
+        }
+    }
+    
+    &__content {
+        max-width: 620px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50px;
+        color: var(--text-color);
+    }
+
+    &__name {
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+        color: var(--green-color);
+    }
+
+    &__desc {
+        margin: 0;
+        font-size: 18px;
+        line-height: 25px;
+        color: #323232;
+
+        span {
+            font-weight: 600;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    ul {
+        margin-bottom: 30px;
+        list-style-type: disc;
+    }
+
+    li {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--text-color);
+    }
+}

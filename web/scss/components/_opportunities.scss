@@ -1,0 +1,53 @@
+.opportunities {
+    padding: 80px 0;
+    background-color: var(--light-color);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__info {
+        width: 50%;
+        margin-right: 23px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #939393;
+    }
+
+    &__desc {
+        margin: 0;
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--text-color);
+
+        span {
+            font-weight: 600;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    ul {
+        margin-bottom: 20px;
+        
+        li {
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--text-color);
+        }
+    }
+}

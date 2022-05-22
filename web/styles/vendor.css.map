@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAP,6EAAO",
+    "sources": [
+        "../scss/vendor.scss"
+    ],
+    "names": [],
+    "file": "vendor.css"
+}

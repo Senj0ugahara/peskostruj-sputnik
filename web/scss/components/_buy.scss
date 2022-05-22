@@ -1,0 +1,30 @@
+.buy {
+    display: flex;
+
+    &__prices {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.price-old, .price-now {
+    display: block;
+}
+
+.price-old {
+    margin-bottom: 17px;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    color: #A7A7A7;
+    text-align: right;
+}
+
+.price-now {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 22px;
+    color: var(--text-color);
+
+}

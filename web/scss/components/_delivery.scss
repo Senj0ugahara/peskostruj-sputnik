@@ -1,0 +1,127 @@
+.delivery {
+    padding-top: 172px;
+    padding-bottom: 70px;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__image {
+      margin-bottom: 20px;
+    }
+  
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    &__company {
+      width: 30%;
+  
+      img {
+        display: block;
+  
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+  
+        &:nth-child(2) {
+            margin: 0 auto;
+        }
+  
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+  
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+      }
+    }
+  
+    &__list {
+      font-size: 18px;
+      line-height: 25px;
+      color: var(--text-color);
+    }
+  
+    &__item {
+      position: relative;
+      padding-left: 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      color: inherit;
+  
+      &:not(:last-child) {
+        margin-top: 31px;
+        margin-bottom: 11px;
+      }
+  
+      &::before {
+        content: '';
+        position: absolute;
+        left: 9px;
+        top: 9px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: var(--text-color);
+      }
+    }
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 70px;
+      line-height: 87.36px;
+    }
+  
+    &__subtitle {
+      max-width: 640px;
+      margin: 0;
+      margin-bottom: 45px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 31px;
+      color: var(--text-color);
+    }
+  
+    &__price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+  
+      &-text {
+        margin: 0;
+        margin-right: 13px;
+        font-size: 20px;
+        line-height: 30px;
+        color: var(--text-color);
+  
+        span {
+            font-weight: 600;
+        }
+  
+        &--two {
+            margin-right: 23px;
+        }
+      }
+    }
+  
+    &__desc {
+      margin: 0;
+      margin-top: 38px;
+      margin-bottom: 60px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--text-color);
+  
+      span {
+          font-weight: 600;
+      }
+    }
+  }

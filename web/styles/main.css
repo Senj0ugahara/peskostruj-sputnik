@@ -1485,10 +1485,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: var(--text-color);
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.set__item:hover {
+  font-weight: 900;
 }
 
 .set__item_1 {
@@ -1539,6 +1549,41 @@ img {
 .set__item_10 {
   top: 180px;
   left: 20px;
+}
+
+.set__modal {
+  display: none;
+}
+
+.fancybox-content {
+  padding: 0;
+}
+
+.set-modal__inner {
+  max-width: 520px;
+  padding: 16px 25px;
+}
+
+.set-modal__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.set-modal__desc {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.set-modal ul li {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
 }
 
 .opportunities {

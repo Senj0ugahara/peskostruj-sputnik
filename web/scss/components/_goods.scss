@@ -1,0 +1,147 @@
+.goods {
+  padding: 60px 0;
+
+  &__title {
+    margin-bottom: 160px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buy  {
+    flex-direction: column;
+  }
+
+  &__prices {
+    margin-bottom: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+
+    .price-old {
+      margin: 0 0 0 40px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: inherit;
+    }
+
+    .price-now {
+      font-size: 32px;
+      line-height: 26px;
+    }
+  }
+
+  &__discount {
+    display: block;
+    padding: 8px 17px 5px 6px;
+    background-image: url(../images/goods/discount-green.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    span {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--light-color);
+    }
+  }
+}
+
+.goods-list {
+  &__item {
+    position: relative;
+    max-width: 378px;
+    width: 100%;
+    padding: 450px 70px 33px;
+    background: var(--light-color);
+    border-radius: 5px;
+
+    &_1 {
+      .goods-list__image {
+        transform: translate(50%, -30px);
+      }
+    }
+
+    &_2 {
+      .goods-list__image {
+        transform: translate(50%, -130px);
+      }
+    }
+
+    &_3 {
+      .goods-list__image {
+        transform: translate(50%, -100px);
+      }
+    }
+
+    &_red {
+      border: 2px solid #FD6A22;
+
+      .goods__discount {
+        background-image: url(../images/goods/discount-red.svg);
+      }
+
+      .goods__btn {
+        background: #FF5858;
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 100%;
+  }
+
+  &__info  {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+
+  &__liters {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--text-color);
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  ul {
+    margin-bottom: 40px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: disc;
+
+    li {
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--text-color);
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

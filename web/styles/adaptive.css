@@ -99,8 +99,31 @@
 }
 
 @media (max-width: 1439px) {
+  .information-list__item {
+    background-size: inherit;
+  }
+  .information-list__item_1 {
+    background-image: url(../images/information/information-mobile-img1.png);
+    background-position: bottom right;
+  }
   .information-list__item_2 {
-    background-position: left 40px center;
+    background-image: url(../images/information/information-mobile-img2.png);
+    background-position: left 20px center;
+  }
+  .information-list__item_3 {
+    background-image: url(../images/information/information-mobile-img3.png);
+    background-position: bottom right;
+  }
+  .information-list__item_4 {
+    background-image: url(../images/information/information-mobile-img4.png);
+    background-position: left center;
+  }
+  .goods-list__item {
+    max-width: none;
+    width: 30%;
+  }
+  .goods-list__liters {
+    text-align: center;
   }
   .profit-list__item_right .profit-list__info {
     max-width: 550px;
@@ -220,8 +243,71 @@
     padding: 10px;
     text-align: center;
   }
+  .information-list__item {
+    background-size: 20%;
+  }
+  .information-list__item_4 {
+    background-position: left bottom;
+  }
+  .information-list__item_5 {
+    background-position: right bottom;
+  }
+  .goods__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goods-list__item {
+    width: 48%;
+  }
+  .goods-list__item:not(:last-child) {
+    margin-bottom: 130px;
+  }
+  .goods-list__item:first-child {
+    margin-right: 4%;
+  }
+  .goods-list__item_red {
+    margin: 0 auto;
+  }
   .kit-list__item {
     padding: 30px;
+  }
+  .profit-list__item_left::after {
+    top: -30px;
+    width: 400px;
+    height: 400px;
+  }
+  .profit-list__item_left::before {
+    top: -7px;
+    width: 354px;
+    height: 354px;
+    background-size: contain;
+  }
+  .profit-list__item_right::after {
+    top: -20px;
+    width: 482px;
+    height: 482px;
+  }
+  .profit-list__item_right::before {
+    top: 3px;
+    width: 436px;
+    height: 436px;
+    background-size: contain;
+  }
+  .profit-list__inner {
+    max-width: 670px;
+    padding: 30px;
+  }
+  .profit-list__info {
+    max-width: 450px !important;
+  }
+  .profit-list__desc {
+    line-height: 22px;
+  }
+  .profit-list__desc:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .profit-list ul {
+    margin-bottom: 10px;
   }
   .main-video__video {
     width: 100%;
@@ -291,6 +377,9 @@
   .base-information__title {
     text-align: center;
   }
+  .information-list__item {
+    background: none;
+  }
   .kit-list__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -333,6 +422,36 @@
   }
   .ease-of-parsing__image {
     width: 100%;
+  }
+  .profit-list__item {
+    max-width: none;
+    max-height: none;
+  }
+  .profit-list__item::after {
+    display: none;
+  }
+  .profit-list__item::before {
+    width: 100%;
+    height: 100%;
+    background-size: 25%;
+  }
+  .profit-list__item_left::before {
+    top: 0;
+    left: 0;
+    background-position: bottom 20px center;
+  }
+  .profit-list__item_right::before {
+    top: 0;
+    right: 0;
+    background-position: bottom 20px center;
+  }
+  .profit-list__inner {
+    max-width: none;
+    padding: 30px 30px 200px;
+  }
+  .profit-list__info {
+    max-width: none !important;
+    margin-left: 0 !important;
   }
   .opportunities__container {
     -webkit-box-orient: vertical;
@@ -421,6 +540,58 @@
   .advantages-list__item_small {
     padding: 50px 30px 350px 30px;
   }
+  .information-list__item {
+    padding: 40px;
+  }
+  .information-list__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .information-list__name {
+    margin-bottom: 30px;
+  }
+  .information-list__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .information-list__desc:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .information-list ul {
+    margin-bottom: 20px;
+  }
+  .information-list ul li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .goods__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .goods-list__item {
+    width: 100%;
+    padding: 30px 70px;
+  }
+  .goods-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .goods-list__item:first-child {
+    margin-right: 00;
+  }
+  .goods-list__item_red {
+    margin: 0;
+  }
+  .goods-list__image {
+    position: inherit;
+    -webkit-transform: none !important;
+            transform: none !important;
+    right: 0;
+    margin-bottom: 30px;
+  }
   .kit__buy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -452,6 +623,23 @@
 }
 
 @media (max-width: 576px) {
+  .hero__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .goods__buy {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+  .goods-list__info {
+    max-width: none;
+  }
+  .profit-list__item::before {
+    display: none;
+  }
+  .profit-list__inner {
+    padding: 30px;
+  }
   .features__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -514,11 +702,36 @@
 }
 
 @media (max-width: 480px) {
+  .advantages-list__item {
+    padding: 50px;
+    background: none;
+    text-align: center;
+  }
+  .advantages-list__item::before {
+    top: 0 !important;
+    right: 0 !important;
+    background-size: 80%;
+  }
+  .information-list__item {
+    padding: 30px;
+  }
+  .goods-list__item {
+    padding: 30px;
+  }
   .manufacturer__title {
     font-size: 30px;
   }
   .footer-phone__link {
     font-size: 30px;
     line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .advantages-list__item {
+    padding: 20px;
+  }
+  .advantages-list__item::before {
+    display: none;
   }
 }

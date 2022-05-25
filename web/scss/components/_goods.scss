@@ -124,6 +124,10 @@
     line-height: 19px;
     text-align: center;
     color: var(--text-color);
+
+    span {
+      font-weight: 600;
+    }
   }
 
   ul {
@@ -141,6 +145,10 @@
 
       &:not(:last-child) {
         margin-bottom: 5px;
+      }
+
+      span {
+        font-weight: 600;
       }
     }
   }

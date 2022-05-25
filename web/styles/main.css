@@ -1071,6 +1071,10 @@ img {
   color: var(--text-color);
 }
 
+.goods-list__desc span {
+  font-weight: 600;
+}
+
 .goods-list ul {
   margin-bottom: 40px;
   padding-left: 0;
@@ -1095,6 +1099,10 @@ img {
 
 .goods-list ul li:not(:last-child) {
   margin-bottom: 5px;
+}
+
+.goods-list ul li span {
+  font-weight: 600;
 }
 
 .kit {
@@ -1147,11 +1155,29 @@ img {
 
 .kit-list__desc {
   margin: 0;
-  margin-bottom: 30px;
-  font-weight: 400;
+  margin-bottom: 10px;
   font-size: 18px;
   line-height: 28px;
   color: var(--text-color);
+}
+
+.kit-list__desc span {
+  font-weight: 600;
+}
+
+.kit-list ul {
+  margin-bottom: 30px;
+  list-style-type: disc;
+}
+
+.kit-list ul li {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--text-color);
+}
+
+.kit-list ul li span {
+  font-weight: 600;
 }
 
 .desiccant-work {

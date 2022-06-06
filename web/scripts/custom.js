@@ -21,6 +21,16 @@ $(document).ready(function() {
   if(window.outerWidth <= 1199) {
     $('.hero__image_mobile').append(`<img src="images/hero-img.png" alt="image">`);
   };
+
+  // tabs on advantages
+  $('.advantages__btn[filter]').click(function() {
+    if ($(this).attr('val') == 'off') {
+      $('.advantages__btn[filter]').attr('val', 'off').removeClass('advantages__btn_active');
+      $(this).attr('val', 'on').addClass('advantages__btn_active');
+      $('.advantages__item').hide(300);
+      $('.advantages__item[filter=' +$(this).attr('filter') + ']').show(300);
+    };
+  });
 });
 
 const swiper1 = new Swiper('.swiper', {

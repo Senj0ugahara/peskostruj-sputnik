@@ -25,13 +25,21 @@
 
     &__desc {
         margin: 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
         color: var(--text-color);
 
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__video {
+        width: 100%;
     }
 }

@@ -2,118 +2,202 @@
     padding: 80px 0 100px;
 
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
     &__subtitle {
-        max-width: 950px;
-        margin: 0 auto 40px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
-        color: var(--text-color);
+        margin: 0;
+        margin-bottom: 60px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #989898;
         text-align: center;
     }
 
-    &__list {
+    &__buttons {
+        margin-bottom: 60px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-image: url(../images/advantages/advantages-line.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    &__btn {
+        padding: 0 50px 30px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 25px;
+        text-align: center;
+        color: var(--text-color);
+
+        &:not(:last-child) {
+            margin-right: 120px;
+        }
+
+        &_active {
+            border-bottom: 3px solid #FD9800;
+            font-weight: 700;
+        }
+    }
+
+    &__list {
+        max-width: 1322px;
+        margin: 0 auto;
     }
 }
 
 .advantages-list {
     &__item {
+        position: relative;
+        padding: 90px 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background: var(--light-color);
-        border-radius: 2px;
-        background-position: left;
-        background-repeat: no-repeat;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
 
         &:not(:last-child) {
-            margin-bottom: 32px;
+            margin-bottom: 30px;
         }
 
-        &_large {
-            position: relative;
-            max-width: 1000px;
-            max-height: 276px;
-            height: 100%;
-            padding: 48px 120px 48px 250px;
-            border: 2px solid #FFAEAE;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 30px;
-                right: 30px;
-                width: 71px;
-                height: 70px;
-                background-image: url(../images/advantages/advantages-icon1.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-        }
-
-        &_small {
-            position: relative;
-            max-width: 750px;
-            padding: 52px 100px 52px 220px;
-            border: 2px solid #2CA700;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 30px;
-                right: 30px;
-                width: 71px;
-                height: 70px;
-                background-image: url(../images/advantages/advantages-icon2.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 93px;
+            height: 80px;
+            padding: 9px 54px 21px 20px;
+            background-image: url(../images/advantages/advantages-icon.svg);
+            background-repeat: no-repeat;
+            font-weight: 900;
+            font-size: 45px;
+            line-height: 50px;
+            color: var(--light-color);
         }
 
         &_1 {
-            background-image: url(../images/advantages/advantages-img1.png);
-            background-position: left 40px center;
+            &::before {
+                content: '1';
+            }
         }
 
         &_2 {
-            background-image: url(../images/advantages/advantages-img2.png);
+            &::before {
+                content: '2';
+            }
         }
 
         &_3 {
-            background-image: url(../images/advantages/advantages-img3.png);
-            background-position: left 40px center;
+            &::before {
+                content: '3';
+            }
         }
 
         &_4 {
-            background-image: url(../images/advantages/advantages-img4.png);
+            &::before {
+                content: '4';
+            }
         }
 
-        &_5 {
-            padding: 80px 120px 80px 250px;
-            background-image: url(../images/advantages/advantages-img5.png);
-            background-position: left 40px center;
+        &_right {
+            .advantages-list__image {
+                order: 1;
+            }
+
+            .advantages-list__info {
+                order: 2;
+                text-align: right;
+            }
+
+            .advantages-list__text {
+                margin-left: 120px;
+            }
         }
     }
 
-    &__title {
+    &__info {
+        width: 65%;
+    }
+
+    &__text {
+        max-width: 520px;
+
+        &_not-max-width {
+            max-width: none;
+            margin-left: 0!important;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    &__heading {
         margin: 0;
         margin-bottom: 10px;
         font-weight: 700;
-        font-size: 25px;
-        line-height: 30px;
+        font-size: 45px;
+        line-height: 50px;
         color: var(--text-color);
+    }
+
+    &__subheading {
+        margin: 0;
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 28px;
+        color: #FD9800;
     }
 
     &__desc {
         margin: 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 32px;
         color: var(--text-color);
+
+        span {
+            font-weight: 700;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &.max-widht {
+            max-width: 700px;
+        }
+
+        li {
+            margin: 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 32px;
+            color: var(--text-color);
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__image {
+        width: 35%;
     }
 }

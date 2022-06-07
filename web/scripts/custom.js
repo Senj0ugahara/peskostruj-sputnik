@@ -22,6 +22,16 @@ $(document).ready(function() {
     $('.hero__image_mobile').append(`<img src="images/hero-img.png" alt="image">`);
   };
 
+  // hero-container remove
+  if(window.outerWidth <= 1700) {
+    $('.hero__container_width').removeClass('hero__container_width');
+  };
+
+  // base-information title mobile add
+  if(window.outerWidth <= 1549) {
+    $('.base-information__container').prepend(`<h2 class="title base-information__title_mobile">Принцип работы пескоструя &laquo;Спутник&raquo;</h2>`);
+  };
+
   // tabs on advantages
   $('.advantages__btn[filter]').click(function() {
     if ($(this).attr('val') == 'off') {

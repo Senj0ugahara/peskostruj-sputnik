@@ -16,6 +16,14 @@
   }
 }
 
+@media (max-width: 1700px) {
+  .hero {
+    &__info {
+      margin-top: 0;
+    }
+  }
+}
+
 @media (max-width: 1649px) {
   .nav-contacts {
     flex-direction: column;
@@ -38,12 +46,63 @@
   .hero {
     &__image {
       position: inherit;
+      width: auto;
     }
 
     &__info {
-      max-width: 600px;
+      max-width: 700px;
       margin-bottom: 50px;
     }
+  }
+
+  .base-information {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__title {
+      display: none;
+
+      &_mobile {
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      text-align: center;
+
+      video {
+        width: auto;
+      }
+    }
+
+    &__info {
+      width: 100%;
+    }
+
+    &__video {
+      text-align: center;
+    }
+  }
+
+  .video-reviews {
+    &__item {
+      margin-bottom: 50px;
+
+      &:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      &:nth-child(n+3) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .table {
+    width: 100%;
   }
 
   .information-list {
@@ -80,52 +139,6 @@
     }
   }
 
-  .set {
-    &__list {
-      width: 30%;
-    }
-
-    &__item {
-      font-size: 16px;
-
-      &_1 {
-        top: -30px;
-      }
-
-      &_2 {
-        top: 0;
-      }
-
-      &_4 {
-        top: 60px;
-      }
-
-      &_5 {
-        top: 90px;
-      }
-
-      &_7 {
-        top: 45px;
-      }
-
-      &_8 {
-        top: 75px;
-      }
-
-      &_9 {
-        top: 105px;
-      }
-
-      &_10 {
-        top: 140px;
-      }
-    }
-
-    &__image {
-      width: 40%;
-    }
-  }
-
   .delivery {
     &__col {
       &:nth-child(2) {
@@ -142,31 +155,19 @@
       }
     }
   }
+
+  .consultation {
+    &__title {
+      width: 90%;
+    }
+  }
 }
 
 @media (max-width: 1439px) {
-  .information-list {
+  .advantages-list {
     &__item {
-      background-size: inherit;
-      &_1 {
-        background-image: url(../images/information/information-mobile-img1.png);
-        background-position: bottom right;
-      }
-
-      &_2 {
-        background-image: url(../images/information/information-mobile-img2.png);
-        background-position: left 20px center;
-      }
-
-      &_3 {
-        background-image: url(../images/information/information-mobile-img3.png);
-        background-position: bottom right;
-      }
-
-      &_4 {
-        background-image: url(../images/information/information-mobile-img4.png);
-        background-position: left center;
-      }
+      padding: 90px;
+      background-size: 30%!important;
     }
   }
 
@@ -195,14 +196,6 @@
     }
   }
 
-  .set {
-    &__item {
-      &_1 {
-        text-align: right;
-      }
-    }
-  }
-
   .gallery {
     &__items{
       grid-template-rows: repeat(3, 144px);
@@ -225,6 +218,12 @@
 
     &__desc {
       font-size: 18px;
+    }
+  }
+
+  .consultation {
+    &__title {
+      width: 100%;
     }
   }
 }
@@ -468,6 +467,14 @@
       max-width: 100%;
     }
   }
+
+  .consultation {
+    &__title {
+      &::before, &::after {
+        display: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -483,7 +490,6 @@
 
     &__image {
       width: 100%;
-      order: 2;
     }
 
     &__info {
@@ -493,6 +499,24 @@
 
     &__title {
       text-align: center;
+    }
+  }
+
+  .set {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -634,9 +658,18 @@
   }
 
   .consultation {
-    &__link {
-      font-size: 40px;
-      line-height: 30px;
+    padding: 120px 0;
+
+    &__btns {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__btn {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -682,6 +715,27 @@
     }
   }
 
+  .table {
+    &__col {
+      padding: 20px 0;
+    }
+
+    &__text {
+      padding: 20px;
+    }
+
+    &__desc { 
+      font-size: 16px;
+    }
+
+    &__price {
+      span {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+
   .information-list {
     &__item {
       padding: 40px;
@@ -716,6 +770,10 @@
   }
 
   .goods {
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
     &__list {
       flex-wrap: nowrap;
       flex-direction: column;
@@ -784,6 +842,11 @@
 }
 
 @media (max-width: 576px) {
+  .main-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
   .hero {
     &__list {
       grid-template-columns: repeat(1, 1fr);
@@ -802,6 +865,41 @@
         background-image: none;
         background: #A8A8A8;
       }
+    }
+  }
+
+  .table {
+    &__col {
+      width: 50%;
+      padding: 10px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+      padding: 10px;
+
+      &-inner {
+        flex-direction: column;
+
+        span {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &__desc {
+      width: 100%;
+    }
+  }
+
+  .set {
+    &__list {
+      align-items: flex-start;
     }
   }
 
@@ -852,6 +950,8 @@
   }
 
   .delivery {
+    padding: 0;
+
     &__container {
         flex-direction: column;
     }
@@ -898,6 +998,16 @@
 }
 
 @media (max-width: 480px) {
+  .main-title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   .information-list {
     &__item {
       padding: 30px;
@@ -913,6 +1023,13 @@
   .manufacturer {
     &__title {
       font-size: 30px;
+    }
+  }
+
+  .consultation {
+    &__btn {
+      width: auto;
+      padding: 30px;
     }
   }
 

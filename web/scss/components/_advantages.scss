@@ -53,18 +53,23 @@
         &_1 {
             .advantages-list__item_1 {
                 background-image: url(../images/advantages/advantages-img1.png);
+                background-position: right 100px bottom;
             }
 
             .advantages-list__item_2 {
-                background-image: url(../images/advantages/advantages-img1.png);
+                background-image: url(../images/advantages/advantages-img2.png);
+                background-position: left 100px center;
             }
 
             .advantages-list__item_3 {
-                background-image: url(../images/advantages/advantages-img1.png);
+                background-image: url(../images/advantages/advantages-img3.png);
+                background-position: right 100px center;
             }
 
             .advantages-list__item_4 {
-                background-image: url(../images/advantages/advantages-img1.png);
+                background-image: url(../images/advantages/advantages-img4.png);
+                background-position: left;
+                background-size: contain;
             }
         }
     }
@@ -79,7 +84,6 @@
         align-items: center;
         background: var(--light-color);
         box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.05);
-        background-position: right;
         background-repeat: no-repeat;
 
         &:not(:last-child) {

@@ -2,7 +2,17 @@
   padding: 60px 0;
 
   &__title {
-    margin-bottom: 160px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 190px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #939393;
     text-align: center;
   }
 

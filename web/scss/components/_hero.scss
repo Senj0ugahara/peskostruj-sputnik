@@ -30,18 +30,18 @@
 
     &__container {
         position: relative;
+        max-width: 1700px;
         z-index: 1;
     }
 
     &__content {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     &__info {
         max-width: 900px;
-        margin-bottom: 130px;
+        margin: 130px 0;
     }
 
     &__list {
@@ -76,6 +76,10 @@
     }
 
     &__image {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        
         &_mobile {
             display: none;
         }

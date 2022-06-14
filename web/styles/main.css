@@ -2111,6 +2111,10 @@ img {
   margin-bottom: 16px;
 }
 
+.footer__image img {
+  margin-left: 0;
+}
+
 .footer-logo__text {
   margin-left: 0;
 }

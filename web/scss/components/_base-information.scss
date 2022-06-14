@@ -1,5 +1,5 @@
 .base-information {
-    padding-bottom: 100px;
+    padding: 60px 0;
 
     &__container {
         display: flex;
@@ -41,5 +41,9 @@
 
     &__video {
         width: 100%;
+
+        video {
+            width: 100%;
+        }
     }
 }

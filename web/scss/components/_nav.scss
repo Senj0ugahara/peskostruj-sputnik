@@ -40,10 +40,13 @@
     width: 197px;
     height: 44px;
     padding: 9px 0px 9px 39px;
+    background: transparent;
+    border: 2px solid var(--green-color);
+    border-radius: 22px;
     font-size: 15px;
     line-height: 18px;
     letter-spacing: 0;
-    border-radius: 5px;
+    color: var(--green-color);
 
     &::before {
       content: '';

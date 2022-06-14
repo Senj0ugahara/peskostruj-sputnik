@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   // images 
   if(window.outerWidth <= 1199) {
-    $('.hero__image_mobile').append(`<img src="images/hero-img.png" alt="image">`);
+    $('.hero__image_mobile').append(`<img src="images/hero/hero-img.png" alt="image">`);
   };
 
   // hero-container remove
@@ -41,6 +41,21 @@ $(document).ready(function() {
       $('.advantages__item[filter=' +$(this).attr('filter') + ']').show(300);
     };
   });
+
+  // advantages open text
+  $('.advantages-list__btn').on('click', function () {
+    $(this).prev('.advantages-list__text').toggleClass('advantages-list__text_open');
+    if ($(this).prev('.advantages-list__text').hasClass('advantages-list__text_open')) {
+      $(this).text('Свернуть');
+    } else {
+      $(this).text('Подробнее');
+    }
+  });
+});
+
+$('[data-fancybox="set"]').fancybox({
+  loop: true,
+  arrows: false,
 });
 
 const swiper1 = new Swiper('.swiper', {
@@ -66,5 +81,18 @@ const swiper1 = new Swiper('.swiper', {
     1650: {
       slidesPerView: 4,
     }
+  },
+});
+
+const swiper2 = new Swiper('.comparison-swiper', {
+  loop: true,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+      nextEl: '.table-mobile-icon-next',
+      prevEl: '.table-mobile-icon-prev',
   },
 });

@@ -2,27 +2,26 @@
 <html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
   <title>Пескоструй Спутник</title>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="styles/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="styles/vendor.css">
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/adaptive.css">
+  <link rel="stylesheet" href="styles/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="styles/vendor.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/adaptive.css" />
 </head>
-
 
 <body class="page__body">
   <div class="site-container">
     <header class="header">
       <div class="container header__container">
         <a class="logo" href="/">
-          <img src="" alt="peskostruj logo">
+          <img src="" alt="peskostruj logo" />
           <span class="logo__text">Официальный сайт производителя</span>
         </a>
         <nav class="nav header__nav">
@@ -34,7 +33,7 @@
               <a class="nav__link" href="#">Цены и комплектации</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Как пользоваться</a>
+              <a class="nav__link" href="#">Как работает</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#delivery">Доставка и оплата</a>
@@ -45,7 +44,9 @@
           </ul>
           <div class="nav-contacts">
             <a class="nav-contacts__link" href="tel:+78002505932">8 800 250 59 32</a>
-            <button class="btn-reset btn nav-contacts__btn">Заказать звонок</button>
+            <button class="btn-reset btn nav-contacts__btn">
+              Заказать звонок
+            </button>
           </div>
         </nav>
         <button class="btn-reset header__burger">
@@ -55,40 +56,72 @@
     </header>
 
     <main class="main">
-      <section class="hero">
-        <div class="container hero__container hero__container_width">
+      <section class="hero" id="hero">
+        <div class="container hero__container">
           <div class="hero__content">
             <div class="hero__info">
-              <h1 class="main-title">Единственный автоматический пескоструй <span>&laquo;Спутник&raquo;</span></h1>
+              <h1 class="main-title">
+                Единственный автоматический<br>
+                <span class="main-title-icon">новый</span> пескоструй
+                <span>&laquo;Спутник&raquo;</span>
+              </h1>
               <div class="hero__image_mobile"></div>
               <ul class="list-reset hero__list">
                 <li class="hero__item">
-                  <h3 class="hero__item-title">Автоматическая подача песка</h3>
-                  <p class="hero__item-desc">
-                    Не&nbsp;забивает шланг и&nbsp;не&nbsp;&laquo;плюется&raquo;<br>
-                    Работа с&nbsp;любым абразивом
-                  </p>
+                  <div class="hero__item-icon">
+                    <img src="images/hero/hero-icon1.svg" alt="icon">
+                  </div>
+                  <div class="hero__item-text">
+                    <h3 class="hero__item-title">
+                      Профессиональное оборудование
+                    </h3>
+                    <p class="hero__item-desc">
+                      Отсоединение компрессора без потери давления<br>
+                      Работает в&nbsp;любых погодных условиях
+                    </p>
+                  </div>
                 </li>
                 <li class="hero__item">
-                  <h3 class="hero__item-title">Конусный резервуар с&nbsp;обеих сторон</h3>
-                  <p class="hero__item-desc">
-                    Воронка не&nbsp;нужна<br>
-                    Песок при работе не&nbsp;зависает
-                  </p>
+                  <div class="hero__item-icon">
+                    <img src="images/hero/hero-icon2.svg" alt="icon">
+                  </div>
+                  <div class="hero__item-text">
+                    <h3 class="hero__item-title">
+                      Конусный резервуар с&nbsp;обеих сторон
+                    </h3>
+                    <p class="hero__item-desc">
+                      Песок при работе не&nbsp;зависает<br>
+                      Воронка не&nbsp;нужна
+                    </p>
+                  </div>
                 </li>
                 <li class="hero__item">
-                  <h3 class="hero__item-title">Полная комплектация</h3>
-                  <p class="hero__item-desc">
-                    Заполняете песком и&nbsp;работаете<br>
-                    Комплектующие сертифицированы
-                  </p>
+                  <div class="hero__item-icon">
+                    <img src="images/hero/hero-icon3.svg" alt="icon">
+                  </div>
+                  <div class="hero__item-text">
+                    <h3 class="hero__item-title">
+                      Полная комплектация
+                    </h3>
+                    <p class="hero__item-desc">
+                      Комплектующие сертифицированы<br>
+                      Заполняете песком и&nbsp;работаете
+                    </p>
+                  </div>
                 </li>
                 <li class="hero__item">
-                  <h3 class="hero__item-title">Профессиональное оборудование</h3>
-                  <p class="hero__item-desc">
-                    Работает в&nbsp;любых погодных условиях<br>
-                    Отсоединение компрессора без потери давления
-                  </p>
+                  <div class="hero__item-icon">
+                    <img src="images/hero/hero-icon4.svg" alt="icon">
+                  </div>
+                  <div class="hero__item-text">
+                    <h3 class="hero__item-title">
+                      Автоматическая подача песка
+                    </h3>
+                    <p class="hero__item-desc">
+                      Не&nbsp;забивает шланг и&nbsp;не&nbsp;&laquo;плюется&raquo;<br>
+                      Работа с&nbsp;любым абразивом
+                    </p>
+                  </div>
                 </li>
               </ul>
               <div class="buy hero__buy">
@@ -100,25 +133,26 @@
               </div>
             </div>
             <div class="hero__image">
-              <img src="images/hero-img.png" alt="image">
+              <img src="images/hero/hero-img.png" alt="image" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <div class="advantages__buttons">
-            <button class="btn-reset advantages__btn advantages__btn_active" filter="tekhnicheskiePreimushchestva" val="on">
-              Технические<br>
+            <button class="btn-reset advantages__btn advantages__btn_active" filter="tekhnicheskiePreimushchestva"
+              val="on">
+              Технические<br />
               преимущества
             </button>
             <button class="btn-reset advantages__btn" filter="osobennostiIspolzovaniya" val="off">
-              Особенности<br>
+              Особенности<br />
               использования
             </button>
             <button class="btn-reset advantages__btn" filter="dvojnayaVygoda" val="off">
-              Двойная<br>
+              Двойная<br />
               выгода
             </button>
           </div>
@@ -126,43 +160,89 @@
             <div class="advantages__item advantages__item_1" filter="tekhnicheskiePreimushchestva">
               <h2 class="title advantages__title">Создано профессионалами</h2>
               <p class="advantages__subtitle">
-                Уникальные разработки конструкторского отдела в&nbsp;вашем аппарате
+                Уникальные разработки конструкторского отдела в&nbsp;вашем
+                аппарате
               </p>
               <ul class="list-reset advantages__list advantages-list">
                 <li class="advantages-list__item advantages-list__item_1">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img1.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Контролируйте ситуацию</h3>
-                    <p class="advantages-list__subheading">Уникальная система управления</p>
+                    <h3 class="advantages-list__heading">
+                      Контролируйте ситуацию
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Уникальная система управления
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        &laquo;Спутник&raquo; позволяет регулировать давление сразу 
-                        <span>в&nbsp;двух</span> местах: в&nbsp;баке и&nbsp;самой системе.<br>
-                        Бак контролируется при помощи крана, который фиксирует уже имеющееся давление в&nbsp;бункере и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую. Компрессор при этом можно легко отключить и&nbsp;использовать в&nbsp;других целях. Давление в&nbsp;системе регулируется через <span>осушитель</span>.
+                        &laquo;Спутник&raquo; позволяет регулировать давление
+                        сразу
+                        <span>в&nbsp;двух</span> местах: в&nbsp;баке
+                        и&nbsp;самой системе.<br />
+                        Бак контролируется при помощи крана, который фиксирует
+                        уже имеющееся давление в&nbsp;бункере
+                        и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую.
+                        Компрессор при этом можно легко отключить
+                        и&nbsp;использовать в&nbsp;других целях. Давление
+                        в&nbsp;системе регулируется через
+                        <span>осушитель</span>.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
                 <li class="advantages-list__item advantages-list__item_2 advantages-list__item_right">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img2.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Забудьте про воронку</h3>
-                    <p class="advantages-list__subheading">Удобная форма верхней части бака</p>
+                    <h3 class="advantages-list__heading">
+                      Забудьте про воронку
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Удобная форма верхней части бака
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        Если горлышко на&nbsp;баке маленькое и&nbsp;узкое, наполнить бункер абразивом и&nbsp;ничего не&nbsp;просыпать возможно только с&nbsp;помощью воронки.
+                        Если горлышко на&nbsp;баке маленькое и&nbsp;узкое,
+                        наполнить бункер абразивом и&nbsp;ничего
+                        не&nbsp;просыпать возможно только с&nbsp;помощью
+                        воронки.
                       </p>
                       <p class="advantages-list__desc">
-                        Благодаря <span>новой форме</span> пескоструя &laquo;Спутник&raquo; абразив попадает внутрь <span>без дополнительных приспособлений.</span>
+                        Благодаря <span>новой форме</span> пескоструя
+                        &laquo;Спутник&raquo; абразив попадает внутрь
+                        <span>без дополнительных приспособлений.</span>
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
                 <li class="advantages-list__item advantages-list__item_3">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img3.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Неудобствам &laquo;крышка&raquo;</h3>
-                    <p class="advantages-list__subheading">Легко крепится и&nbsp;снимается</p>
+                    <h3 class="advantages-list__heading">
+                      Неудобствам &laquo;крышка&raquo;
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Легко крепится и&nbsp;снимается
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        При узкой горловине пескоструйного аппарата абразив постоянно остаётся на&nbsp;резьбе, что приводит к&nbsp;быстрому износу. <span>Крышка</span> &laquo;Спутника&raquo; <span>имеет совершенно новую конструкцию</span> и&nbsp;прижимается за&nbsp;счёт давления в&nbsp;баке.
+                        При узкой горловине пескоструйного аппарата абразив
+                        постоянно остаётся на&nbsp;резьбе, что приводит
+                        к&nbsp;быстрому износу.
+                        <span>Крышка</span> &laquo;Спутника&raquo;
+                        <span>имеет совершенно новую конструкцию</span>
+                        и&nbsp;прижимается за&nbsp;счёт давления в&nbsp;баке.
                       </p>
                       <p class="advantages-list__desc">
                         Это гарантирует:
@@ -173,174 +253,247 @@
                         <li>надёжное, герметичное соединение</li>
                       </ul>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
                 <li class="advantages-list__item advantages-list__item_4 advantages-list__item_right">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img4.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Надёжность по&nbsp;ГОСту</h3>
-                    <p class="advantages-list__subheading">Манометр и&nbsp;клапан сброса давления по&nbsp;ГОСТу</p>
+                    <h3 class="advantages-list__heading">
+                      Надёжность по&nbsp;ГОСту
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Манометр и&nbsp;клапан сброса давления по&nbsp;ГОСТу
+                    </p>
                     <div class="advantages-list__text advantages-list__text_not-max-width">
                       <p class="advantages-list__desc">
-                        Пескоструй работает под давлением <span>4&ndash;8&nbsp;атм.</span><br>
-                        Безопасность работы обеспечивают: 	
+                        Пескоструй работает под давлением
+                        <span>4&ndash;8&nbsp;атм.</span><br />
+                        Безопасность работы обеспечивают:
                       </p>
                       <ul>
-                        <li>спускной <span>клапан на&nbsp;8&nbsp;атм.</span> ГОСТ 31294&ndash;2005, сертифицирован;</li>
-                        <li><span>манометр на&nbsp;10&nbsp;атм</span> Класс точности 2,5.</li>
+                        <li>
+                          спускной
+                          <span>клапан на&nbsp;8&nbsp;атм.</span> ГОСТ
+                          31294&ndash;2005, сертифицирован;
+                        </li>
+                        <li>
+                          <span>манометр на&nbsp;10&nbsp;атм</span> Класс
+                          точности 2,5.
+                        </li>
                       </ul>
                       <p class="advantages-list__desc">
-                        Оборудование проверяют на&nbsp;стендах высокого давления квалифицированные специалисты.<br>
+                        Оборудование проверяют на&nbsp;стендах высокого
+                        давления квалифицированные специалисты.<br />
                         Все этапы проверки регламентированы.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="advantages__item advantages__item_2" filter="osobennostiIspolzovaniya" style="display:none;">
-              <h2 class="title advantages__title">Создано профессионалами</h2>
+              <h2 class="title advantages__title">
+                Со&nbsp;&laquo;Спутником&raquo; каждый сможет почувствовать
+                себя мастером
+              </h2>
               <p class="advantages__subtitle">
-                Уникальные разработки конструкторского отдела в&nbsp;вашем аппарате
+                Пользоваться нашим пескоструйным аппаратом&nbsp;&mdash; легко!
               </p>
               <ul class="list-reset advantages__list advantages-list">
                 <li class="advantages-list__item advantages-list__item_1">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img5.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Контролируйте ситуацию</h3>
-                    <p class="advantages-list__subheading">Уникальная система управления</p>
+                    <h3 class="advantages-list__heading">
+                      Один аппарат&nbsp;&mdash; множество задач
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Для гаража и&nbsp;автосервиса
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        &laquo;Спутник&raquo; позволяет регулировать давление сразу 
-                        <span>в&nbsp;двух</span> местах: в&nbsp;баке и&nbsp;самой системе.<br>
-                        Бак контролируется при помощи крана, который фиксирует уже имеющееся давление в&nbsp;бункере и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую. Компрессор при этом можно легко отключить и&nbsp;использовать в&nbsp;других целях. Давление в&nbsp;системе регулируется через <span>осушитель</span>.
+                        С&nbsp;пескоструем &laquo;Спутник&raquo;
+                        вы&nbsp;сможете:
+                      </p>
+                      <ul>
+                        <li>очистить ржавчину</li>
+                        <li>снять старый лак и&nbsp;краску</li>
+                        <li>
+                          подготовить поверхности к&nbsp;покраске
+                          и&nbsp;антикоррозийной обработке
+                        </li>
+                        <li>
+                          избавиться от&nbsp;гари и&nbsp;граффити
+                          на&nbsp;стенах матировать стекло
+                        </li>
+                        <li>сделать гравировку на&nbsp;зеркалах</li>
+                      </ul>
+                      <p class="advantages-list__desc">
+                        Пескоструй работает с&nbsp;компрессором
+                        производительностью от&nbsp;100
+                        до&nbsp;700&nbsp;л/мин. Режим для матирования
+                        стекла&nbsp;&mdash; 200&ndash;350&nbsp;л/мин. Для
+                        удаления краски, ржавчины и&nbsp;нагара&nbsp;&mdash;
+                        600&ndash;700&nbsp;л/мин. Покрытый ржавчиной
+                        автомобильный диск на&nbsp;15&nbsp;дюймов очищается
+                        за&nbsp;10-15&nbsp;минут.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
                 <li class="advantages-list__item advantages-list__item_2 advantages-list__item_right">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img6.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Забудьте про воронку</h3>
-                    <p class="advantages-list__subheading">Удобная форма верхней части бака</p>
+                    <h3 class="advantages-list__heading">Идеальная работа</h3>
+                    <p class="advantages-list__subheading">
+                      Бесперебойная работа, благодаря встроенному осушителю
+                      воздуха
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        Если горлышко на&nbsp;баке маленькое и&nbsp;узкое, наполнить бункер абразивом и&nbsp;ничего не&nbsp;просыпать возможно только с&nbsp;помощью воронки.
+                        Пескоструи без влагоотделителя работают рывками
+                        и&nbsp;&laquo;плюются&raquo; песком.
+                        Причина&nbsp;&mdash; конденсат, который скапливается
+                        внутри аппарата. Абразив становится влажным, липнет
+                        к&nbsp;смесителям и&nbsp;тройникам, мешает работе.
+                        Оборудование приходится разбирать и&nbsp;чистить.
                       </p>
                       <p class="advantages-list__desc">
-                        Благодаря <span>новой форме</span> пескоструя &laquo;Спутник&raquo; абразив попадает внутрь <span>без дополнительных приспособлений.</span>
+                        На&nbsp;пескоструй &laquo;Спутник&raquo; установлен
+                        осушитель воздуха AFR-2000. Он&nbsp;собирает конденсат
+                        в&nbsp;специальную ёмкость. Песок остаётся сухим,
+                        и&nbsp;аппарат не&nbsp;&laquo;плюётся&raquo;.<br />
+                        <span>Работает при температуре 5&mdash;60&deg;С;</span><br />
+                        <span>давление до&nbsp;10&nbsp;атм.</span><br />
+                        Осушитель воздуха&nbsp;&mdash; признак
+                        профессионального пескоструя.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
                 <li class="advantages-list__item advantages-list__item_3">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img7.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Неудобствам &laquo;крышка&raquo;</h3>
-                    <p class="advantages-list__subheading">Легко крепится и&nbsp;снимается</p>
+                    <h3 class="advantages-list__heading">
+                      Проще детского конструктора
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Сборка и&nbsp;разборка &laquo;Спутника&raquo;
+                      не&nbsp;займёт и&nbsp;пяти минут!
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        При узкой горловине пескоструйного аппарата абразив постоянно остаётся на&nbsp;резьбе, что приводит к&nbsp;быстрому износу. <span>Крышка</span> &laquo;Спутника&raquo; <span>имеет совершенно новую конструкцию</span> и&nbsp;прижимается за&nbsp;счёт давления в&nbsp;баке.
-                      </p>
-                      <p class="advantages-list__desc">
-                        Это гарантирует:
-                      </p>
-                      <ul>
-                        <li>долгий срок службы</li>
-                        <li>лёгкий и&nbsp;быстрый монтаж/демонтаж</li>
-                        <li>надёжное, герметичное соединение</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="advantages-list__item advantages-list__item_4 advantages-list__item_right">
-                  <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Надёжность по&nbsp;ГОСту</h3>
-                    <p class="advantages-list__subheading">Манометр и&nbsp;клапан сброса давления по&nbsp;ГОСТу</p>
-                    <div class="advantages-list__text advantages-list__text_not-max-width">
-                      <p class="advantages-list__desc">
-                        Пескоструй работает под давлением <span>4&ndash;8&nbsp;атм.</span><br>
-                        Безопасность работы обеспечивают: 	
-                      </p>
-                      <ul>
-                        <li>спускной <span>клапан на&nbsp;8&nbsp;атм.</span> ГОСТ 31294&ndash;2005, сертифицирован;</li>
-                        <li><span>манометр на&nbsp;10&nbsp;атм</span> Класс точности 2,5.</li>
-                      </ul>
-                      <p class="advantages-list__desc">
-                        Оборудование проверяют на&nbsp;стендах высокого давления квалифицированные специалисты.<br>
-                        Все этапы проверки регламентированы.
+                        Инструкция идёт в&nbsp;комплекте! Однако все детали
+                        пескоструйного аппарата настолько просты,
+                        а&nbsp;способ крепления комплектующих понятен, что
+                        вы&nbsp;легко сможете обойтись без сложных схем
+                        и&nbsp;чертежей.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
               </ul>
             </div>
             <div class="advantages__item advantages__item_3" filter="dvojnayaVygoda" style="display:none;">
-              <h2 class="title advantages__title">Создано профессионалами</h2>
+              <h2 class="title advantages__title">Двойная выгода</h2>
               <p class="advantages__subtitle">
-                Уникальные разработки конструкторского отдела в&nbsp;вашем аппарате
+                Получите приятные бонусы и&nbsp;подарки
               </p>
               <ul class="list-reset advantages__list advantages-list">
                 <li class="advantages-list__item advantages-list__item_1">
-                  <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Контролируйте ситуацию</h3>
-                    <p class="advantages-list__subheading">Уникальная система управления</p>
-                    <div class="advantages-list__text">
-                      <p class="advantages-list__desc">
-                        &laquo;Спутник&raquo; позволяет регулировать давление сразу 
-                        <span>в&nbsp;двух</span> местах: в&nbsp;баке и&nbsp;самой системе.<br>
-                        Бак контролируется при помощи крана, который фиксирует уже имеющееся давление в&nbsp;бункере и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую. Компрессор при этом можно легко отключить и&nbsp;использовать в&nbsp;других целях. Давление в&nbsp;системе регулируется через <span>осушитель</span>.
-                      </p>
-                    </div>
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img8.png" alt="image" />
                   </div>
-                </li>
-                <li class="advantages-list__item advantages-list__item_2 advantages-list__item_right">
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Забудьте про воронку</h3>
-                    <p class="advantages-list__subheading">Удобная форма верхней части бака</p>
+                    <h3 class="advantages-list__heading">
+                      Сопло из&nbsp;керамики в&nbsp;комплекте
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      Не&nbsp;нужно покупать отдельно
+                    </p>
                     <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        Если горлышко на&nbsp;баке маленькое и&nbsp;узкое, наполнить бункер абразивом и&nbsp;ничего не&nbsp;просыпать возможно только с&nbsp;помощью воронки.
-                      </p>
-                      <p class="advantages-list__desc">
-                        Благодаря <span>новой форме</span> пескоструя &laquo;Спутник&raquo; абразив попадает внутрь <span>без дополнительных приспособлений.</span>
-                      </p>
-                    </div>
-                  </div>
-                </li>
-                <li class="advantages-list__item advantages-list__item_3">
-                  <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Неудобствам &laquo;крышка&raquo;</h3>
-                    <p class="advantages-list__subheading">Легко крепится и&nbsp;снимается</p>
-                    <div class="advantages-list__text">
-                      <p class="advantages-list__desc">
-                        При узкой горловине пескоструйного аппарата абразив постоянно остаётся на&nbsp;резьбе, что приводит к&nbsp;быстрому износу. <span>Крышка</span> &laquo;Спутника&raquo; <span>имеет совершенно новую конструкцию</span> и&nbsp;прижимается за&nbsp;счёт давления в&nbsp;баке.
-                      </p>
-                      <p class="advantages-list__desc">
-                        Это гарантирует:
+                        В&nbsp;комплекте с&nbsp;пескоструйным аппаратом идёт
+                        керамическое сопло диаметром 2&nbsp;мм, которое
+                        рассчитано на&nbsp;1&ndash;2 часа работы
+                        и&nbsp;обладает внушительными характеристиками:
                       </p>
                       <ul>
-                        <li>долгий срок службы</li>
-                        <li>лёгкий и&nbsp;быстрый монтаж/демонтаж</li>
-                        <li>надёжное, герметичное соединение</li>
+                        <li>повышенная износостойкость;</li>
+                        <li>подходит для всех абразивов;</li>
+                        <li>крепится под прижимную гайку;</li>
+                        <li>
+                          с&nbsp;помощью конического диффузора равномерно
+                          распределяет абразив по&nbsp;рабочей поверхности.
+                        </li>
                       </ul>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
-                <li class="advantages-list__item advantages-list__item_4 advantages-list__item_right">
+                <li class="advantages-list__item advantages-list__item_2">
+                  <div class="advantages-list__image_mobile">
+                    <img src="images/advantages/advantages-img9.png" alt="image" />
+                  </div>
                   <div class="advantages-list__info">
-                    <h3 class="advantages-list__heading">Надёжность по&nbsp;ГОСту</h3>
-                    <p class="advantages-list__subheading">Манометр и&nbsp;клапан сброса давления по&nbsp;ГОСТу</p>
-                    <div class="advantages-list__text advantages-list__text_not-max-width">
+                    <h3 class="advantages-list__heading">
+                      Гарантия 2&nbsp;года от&nbsp;завода-производителя
+                    </h3>
+                    <p class="advantages-list__subheading">
+                      3&nbsp;уровня контроля ОТК
+                    </p>
+                    <div class="advantages-list__text">
                       <p class="advantages-list__desc">
-                        Пескоструй работает под давлением <span>4&ndash;8&nbsp;атм.</span><br>
-                        Безопасность работы обеспечивают: 	
+                        Пескоструйные аппараты производят на&nbsp;современном
+                        заводском оборудовании. Ни&nbsp;один пескоструй
+                        не&nbsp;отправится к&nbsp;покупателю без
+                        3&nbsp;уровней проверки ОТК:
                       </p>
                       <ul>
-                        <li>спускной <span>клапан на&nbsp;8&nbsp;атм.</span> ГОСТ 31294&ndash;2005, сертифицирован;</li>
-                        <li><span>манометр на&nbsp;10&nbsp;атм</span> Класс точности 2,5.</li>
+                        <li>
+                          при получении с&nbsp;производства (проверка
+                          давлением);
+                        </li>
+                        <li>на&nbsp;складе (проверка качества);</li>
+                        <li>при отправке клиенту (проверка комплектации).</li>
                       </ul>
                       <p class="advantages-list__desc">
-                        Оборудование проверяют на&nbsp;стендах высокого давления квалифицированные специалисты.<br>
-                        Все этапы проверки регламентированы.
+                        Расширенная гарантия&nbsp;&mdash; 24&nbsp;месяца.
+                        Высокое качество. Без брака.
+                      </p>
+                      <p class="advantages-list__desc">
+                        Декларация о&nbsp;соответствии
+                        N&nbsp;RU&nbsp;Д-RU.НА66.В.06753/20.<br />
+                        Зарегистрирована в&nbsp;реестре РОСАККРЕДИТАЦИИ.
                       </p>
                     </div>
+                    <button class="btn-reset btn advantages-list__btn">
+                      Подробнее
+                    </button>
                   </div>
                 </li>
               </ul>
@@ -349,50 +502,73 @@
         </div>
       </section>
 
-      <section class="base-information">
+      <section class="base-information" id="base-information">
         <div class="container base-information__container">
           <div class="base-information__image">
-            <video autoplay="autoplay" loop="" preload="auto" muted="">                 
-              <source src="video/base-information-video.mp4" type="video/mp4">            
+            <video autoplay="autoplay" loop="" preload="auto" muted="">
+              <source src="video/base-information-video.mp4" type="video/mp4" />
             </video>
           </div>
           <div class="base-information__info">
             <h2 class="title base-information__title">
-              Принцип работы<br>
+              Принцип работы<br />
               пескоструя &laquo;Спутник&raquo;
             </h2>
             <p class="base-information__desc">
-              К&nbsp;пескоструйному аппарату с&nbsp;помощью <span>быстросъёмного соединения (1)</span> подключается компрессор. Пройдя через <span>осушитель (2)</span>, воздух отделяется от&nbsp;влаги и&nbsp;уже сухим попадает в&nbsp;<span>бак (3)</span>. Благодаря специальному <span>крану (4)</span>, перекрывающему давление, вы&nbsp;в&nbsp;любой момент можете выключить компрессор и&nbsp;использовать его в&nbsp;других целях. Давление надёжно удержится внутри бака. 
+              К&nbsp;пескоструйному аппарату с&nbsp;помощью
+              <span>быстросъёмного соединения (1)</span> подключается
+              компрессор. Пройдя через <span>осушитель (2)</span>, воздух
+              отделяется от&nbsp;влаги и&nbsp;уже сухим попадает в&nbsp;<span>бак (3)</span>. Благодаря специальному
+              <span>крану (4)</span>, перекрывающему
+              давление, вы&nbsp;в&nbsp;любой момент можете выключить
+              компрессор и&nbsp;использовать его в&nbsp;других целях. Давление
+              надёжно удержится внутри бака.
             </p>
             <p class="base-information__desc">
-              Песок, который подаётся через <span>жиклер (5)</span>, смешивается с&nbsp;воздухом в&nbsp;<span>распределительном узле (6)</span>. Когда воздушный поток прекращается, абразив достигает предельного уровня в&nbsp;<span>крестовине (7)</span> и&nbsp;перестаёт сыпаться дальше. При повторном открытии <span>пистолета (8)</span> по&nbsp;<span>шлангу (9)</span> снова начинает идти воздух, подхватывая скопившийся песок. Но&nbsp;если пистолет закрыт, абразив не&nbsp;скапливается и&nbsp;не&nbsp;забивает шланг.
+              Песок, который подаётся через <span>жиклер (5)</span>,
+              смешивается с&nbsp;воздухом в&nbsp;<span>распределительном узле (6)</span>. Когда воздушный поток
+              прекращается, абразив достигает
+              предельного уровня в&nbsp;<span>крестовине (7)</span>
+              и&nbsp;перестаёт сыпаться дальше. При повторном открытии
+              <span>пистолета (8)</span> по&nbsp;<span>шлангу (9)</span> снова
+              начинает идти воздух, подхватывая скопившийся песок.
+              Но&nbsp;если пистолет закрыт, абразив не&nbsp;скапливается
+              и&nbsp;не&nbsp;забивает шланг.
             </p>
             <p class="base-information__desc">
-              Давление в&nbsp;системе контролируют <span>спускные клапаны (10)</span>, а&nbsp;<span>манометр (11)</span> показывает избыточное давление.
+              Давление в&nbsp;системе контролируют
+              <span>спускные клапаны (10)</span>, а&nbsp;<span>манометр (11)</span>
+              показывает избыточное давление.
             </p>
             <div class="base-information__video">
-              <video autoplay="autoplay" loop="" preload="auto" muted="">                 
-                <source src="video/desiccant-work-video.mp4" type="video/mp4">            
+              <video autoplay="autoplay" loop="" preload="auto" muted="">
+                <source src="video/desiccant-work-video.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="video-reviews">
+      <section class="video-reviews" id="video-reviews">
         <div class="container">
-          <h2 class="title video-reviews__title">Пескоструй &laquo;Спутник&raquo; в&nbsp;деле</h2>
-          <p class="video-reviews__subtitle">Чистка от&nbsp;ржавчины, удаление краски, обработка древесины и&nbsp;матирование стекла</p>
+          <h2 class="title video-reviews__title">
+            Пескоструй &laquo;Спутник&raquo; в&nbsp;деле
+          </h2>
+          <p class="video-reviews__subtitle">
+            Чистка от&nbsp;ржавчины, удаление краски, обработка древесины
+            и&nbsp;матирование стекла
+          </p>
           <ul class="list-reset video-reviews__list">
             <li class="video-reviews__item">
               <a class="video__item" data-fancybox="https://youtu.be/hxnDGLULAjM" href="https://youtu.be/hxnDGLULAjM">
                 <div class="video__container video-reviews__video-container">
                   <div class="video__link">
                     <picture>
-                      <source class="" type="image/webp" data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
-                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp">
+                      <source class="" type="image/webp"
+                        data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
+                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp" />
                       <img class="video__media" data-src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" alt="video"
-                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg">
+                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" />
                     </picture>
                   </div>
                   <button class="btn-reset video__btn">
@@ -412,10 +588,11 @@
                 <div class="video__container video-reviews__video-container">
                   <div class="video__link">
                     <picture>
-                      <source class="" type="image/webp" data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
-                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp">
+                      <source class="" type="image/webp"
+                        data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
+                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp" />
                       <img class="video__media" data-src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" alt="video"
-                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg">
+                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" />
                     </picture>
                   </div>
                   <button class="btn-reset video__btn">
@@ -435,10 +612,11 @@
                 <div class="video__container video-reviews__video-container">
                   <div class="video__link">
                     <picture>
-                      <source class="" type="image/webp" data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
-                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp">
+                      <source class="" type="image/webp"
+                        data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
+                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp" />
                       <img class="video__media" data-src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" alt="video"
-                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg">
+                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" />
                     </picture>
                   </div>
                   <button class="btn-reset video__btn">
@@ -458,10 +636,11 @@
                 <div class="video__container video-reviews__video-container">
                   <div class="video__link">
                     <picture>
-                      <source class="" type="image/webp" data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
-                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp">
+                      <source class="" type="image/webp"
+                        data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
+                        srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp" />
                       <img class="video__media" data-src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" alt="video"
-                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg">
+                        src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" />
                     </picture>
                   </div>
                   <button class="btn-reset video__btn">
@@ -480,65 +659,68 @@
         </div>
       </section>
 
-      <section class="comparison">
+      <section class="comparison" id="comparison">
         <div class="container">
-          <h2 class="title comparison__title">&laquo;Спутник&raquo;: новейший аппарат, в&nbsp;котором нет недостатков обычных пескоструев</h2>
-          <table class="comparison__table table">
+          <h2 class="title title--center comparison__title">
+            &laquo;Спутник&raquo;: новейший аппарат, в&nbsp;котором нет
+            недостатков обычных пескоструев
+          </h2>
+          <table class="table comparison__table">
             <thead>
               <tr>
-                <td class="table__col table__title">Другой пескоструй</td>
-                <td class="table__col table__col_sputnik table__title">&laquo;Спутник&raquo; 2022</td>
+                <td class="table__col table__title">
+                  Неоправданно дорогой пескоструйный аппарат
+                </td>
+                <td class="table__col table__title">
+                  Обычный пескоструйный аппарат
+                </td>
+                <td class="table__col table__col_sputnik table__title">
+                  &laquo;Спутник&raquo; 2022
+                </td>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="table__col table__image">
-                  <img src="" alt="image">
+                  <img src="images/comprasion-another1.png" alt="image" />
+                </td>
+                <td class="table__col table__image">
+                  <img src="images/comprasion-another2.png" alt="image" />
                 </td>
                 <td class="table__col table__col_sputnik table__image">
-                  <img src="images/comprasion-sputnik.png" alt="image">
+                  <img src="images/comprasion-sputnik.png" alt="image" />
                 </td>
               </tr>
               <tr>
                 <td class="table__col table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/close.svg" alt="icon">
+                      <img src="images/comprasion/check.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      Обычный шаровый кран. Абразив постоянно забивает шланг. Из-за этого пистолет аппарата при открытии может выпускать не&nbsp;песочно-воздушную смесь, а&nbsp;&laquo;голый&raquo; песок.
+                      Широкая горловина, в&nbsp;которую удобно засыпать песок.
                     </p>
                   </div>
                 </td>
-                <td class="table__col table__col_sputnik table__text">
-                  <div class="table__text-inner">
-                    <span>
-                      <img src="images/comprasion/check.svg" alt="icon">
-                    </span>
-                    <p class="table__desc">
-                      <span>Продуманный распределительный узел, который благодаря своей крестовидной форме автоматически блокирует подачу песка при отсутствии воздушного потока внутри.</span>
-                    </p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
                 <td class="table__col table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/close.svg" alt="icon">
+                      <img src="images/comprasion/close.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      Непродуманный канал подачи песка, на&nbsp;прочистку которого придётся тратить много лишнего времени.
+                      Узкая горловина с&nbsp;резьбой, в&nbsp;которую постоянно
+                      забивается песок.
                     </p>
                   </div>
                 </td>
                 <td class="table__col table__col_sputnik table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/check.svg" alt="icon">
+                      <img src="images/comprasion/check.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      <span>Усовершенствованный канал подачи жиклера, чистить который легко как никогда! Просто откройте предусмотренную для этого заглушку и&nbsp;уберите скопившийся в&nbsp;канале песок, не&nbsp;разбирая аппарата.</span>
+                      <span>Широкая горловина, в&nbsp;которую удобно засыпать
+                        песок.</span>
                     </p>
                   </div>
                 </td>
@@ -547,20 +729,36 @@
                 <td class="table__col table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/close.svg" alt="icon">
+                      <img src="images/comprasion/close.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      Шаровые краны, которые совсем не&nbsp;предназначены для песка.
+                      Нет возможности делать прочистку каналов во&nbsp;время
+                      использования. Чтобы прочистить жиклер, нужно полностью
+                      отключить и&nbsp;разобрать аппарат.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Нет возможности делать прочистку каналов во&nbsp;время
+                      использования. Чтобы прочистить жиклер, нужно полностью
+                      отключить и&nbsp;разобрать аппарат.
                     </p>
                   </div>
                 </td>
                 <td class="table__col table__col_sputnik table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/check.svg" alt="icon">
+                      <img src="images/comprasion/check.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      <span>Обновлённая конструкция, буквально лишенная недостатков! Она проста и&nbsp;понятна даже интуитивно.</span>
+                      <span>Благодаря усовершенствованным каналам жиклера,
+                        их&nbsp;чистку можно делать прямо во&nbsp;время
+                        использования аппарата.</span>
                     </p>
                   </div>
                 </td>
@@ -569,76 +767,438 @@
                 <td class="table__col table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/close.svg" alt="icon">
+                      <img src="images/comprasion/check.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      Неудобная горловина. Чтобы засыпать песок в&nbsp;бункер, нужна специальная воронка.
+                      Удобная заглушка на&nbsp;баке, которую не&nbsp;нужно
+                      закручивать.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Стандартная заглушка с&nbsp;резьбой. Чтобы закрыть бак,
+                      нужно много сил и&nbsp;времени.
                     </p>
                   </div>
                 </td>
                 <td class="table__col table__col_sputnik table__text">
                   <div class="table__text-inner">
                     <span>
-                      <img src="images/comprasion/check.svg" alt="icon">
+                      <img src="images/comprasion/check.svg" alt="icon" />
                     </span>
                     <p class="table__desc">
-                      <span>Удобная горловина, не&nbsp;требующая для загрузки бункера никаких дополнительных приспособлений.</span>
+                      <span>Удобная заглушка на&nbsp;баке, которую не&nbsp;нужно
+                        закручивать.</span>
                     </p>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="table__col table__price">
-                  в&nbsp;среднем
-                  <span class="red">12 750 ₽</span>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Есть быстросъёмное соединение для подачи воздуха.
+                    </p>
+                  </div>
                 </td>
-                <td class="table__col table__col_sputnik table__price">
-                  по&nbsp;акции
-                  <span class="green">11 750 ₽</span>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Нет быстросъёмного соединение для подачи воздуха.
+                      Необходимы дополнительные штуцеры и&nbsp;постоянное
+                      стягивание шланга хомутом.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__col_sputnik table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      <span>Есть быстросъёмное соединение для подачи воздуха. Всё
+                        быстро и&nbsp;удобно: никаких дополнительных штуцеров,
+                        не&nbsp;нужно снимать/надевать шланг и&nbsp;стягивать
+                        его хомутом.</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      В&nbsp;комплекте шланг, утверждённый по&nbsp;ГОСТу
+                      и&nbsp;предназначенный специально для пескоструйных
+                      аппаратов.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      В&nbsp;комплекте обычный шланг, не&nbsp;предназначенный
+                      пескоструйных аппаратов.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__col_sputnik table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      <span>В&nbsp;комплекте шланг, утверждённый по&nbsp;ГОСТу
+                        и&nbsp;предназначенный специально для пескоструйных
+                        аппаратов.</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Дорогой узел подачи с&nbsp;шиберным краном,
+                      предназначенный для песка и&nbsp;абразивов.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Узел подачи с&nbsp;шаровым краном, который
+                      не&nbsp;предназначен для песка
+                      и&nbsp;&laquo;заклинит&raquo; через 2-3&nbsp;применения.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__col_sputnik table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      <span>Автоматический узел подачи, разработанный специально
+                        для работы с&nbsp;абразивами.</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/close.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Нет осушителя воздуха. Аппарат работает с&nbsp;перебоями
+                      и&nbsp;&laquo;плюются&raquo; песком.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      Есть осушитель воздуха. Аппарат работает без перебоев и
+                      не «плюются» песком.
+                    </p>
+                  </div>
+                </td>
+                <td class="table__col table__col_sputnik table__text">
+                  <div class="table__text-inner">
+                    <span>
+                      <img src="images/comprasion/check.svg" alt="icon" />
+                    </span>
+                    <p class="table__desc">
+                      <span>Есть осушитель воздуха. Аппарат работает без перебоев
+                        и&nbsp;не&nbsp;&laquo;плюются&raquo; песком.</span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="table__col table__prices">
+                  <p class="table__info">в среднем</p>
+                  <span class="table__price table__price--now">52 287 ₽</span>
+                </td>
+                <td class="table__col table__prices">
+                  <p class="table__info">в среднем</p>
+                  <span class="table__price table__price--now">12 750 ₽</span>
+                </td>
+                <td class="table__col table__col_sputnik table__prices">
+                  <p class="table__info">по акции</p>
+                  <span class="table__price table__price--now table__price_green">11 750 ₽</span>
                 </td>
               </tr>
             </tbody>
           </table>
+
+          <div class="comparison__table-mobile">
+            <div class="swiper comparison-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="table-mobile__col">
+                    <h3 class="table-mobile__title">
+                      Неоправданно дорогой пескоструйный аппарат
+                    </h3>
+                    <div class="table-mobile__image">
+                      <span class="table-mobile-icon-prev"></span>
+                      <img src="images/comprasion-another1.png" alt="image" />
+                      <span class="table-mobile-icon-next"></span>
+                    </div>
+                    <div class="table-mobile__text">
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Широкая горловина, в&nbsp;которую удобно засыпать песок.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Нет возможности делать прочистку каналов во&nbsp;время использования. Чтобы прочистить жиклер,
+                          нужно полностью отключить и&nbsp;разобрать аппарат.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Удобная заглушка на&nbsp;баке, которую не&nbsp;нужно закручивать.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Есть быстросъёмное соединение для подачи воздуха.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          В&nbsp;комплекте шланг, утверждённый по&nbsp;ГОСТу и&nbsp;предназначенный специально для
+                          пескоструйных аппаратов.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Дорогой узел подачи с&nbsp;шиберным краном, предназначенный для песка и&nbsp;абразивов.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Нет осушителя воздуха. Аппарат работает с&nbsp;перебоями и&nbsp;&laquo;плюются&raquo; песком.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="table-mobile__prices">
+                      <p class="table-mobile__info">в среднем</p>
+                      <span class="table-mobile__price table-mobile__price--now">52 287 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="table-mobile__col">
+                    <h3 class="table-mobile__title">
+                      Обычный пескоструйный аппарат
+                    </h3>
+                    <div class="table-mobile__image">
+                      <span class="table-mobile-icon-prev"></span>
+                      <img src="images/comprasion-another2.png" alt="image" />
+                      <span class="table-mobile-icon-next"></span>
+                    </div>
+                    <div class="table-mobile__text">
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Узкая горловина с&nbsp;резьбой, в&nbsp;которую постоянно забивается песок.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Нет возможности делать прочистку каналов во&nbsp;время использования. Чтобы прочистить жиклер,
+                          нужно полностью отключить и&nbsp;разобрать аппарат.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Стандартная заглушка с&nbsp;резьбой. Чтобы закрыть бак, нужно много сил и&nbsp;времени.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Нет быстросъёмного соединение для подачи воздуха. Необходимы дополнительные штуцеры
+                          и&nbsp;постоянное стягивание шланга хомутом.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          В&nbsp;комплекте обычный шланг, не&nbsp;предназначенный пескоструйных аппаратов.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/close.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Узел подачи с&nbsp;шаровым краном, который не&nbsp;предназначен для песка
+                          и&nbsp;&laquo;заклинит&raquo; через 2-3&nbsp;применения.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Есть осушитель воздуха. Аппарат работает без перебоев и&nbsp;не&nbsp;&laquo;плюются&raquo;
+                          песком.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="table-mobile__prices">
+                      <p class="table-mobile__info">в среднем</p>
+                      <span class="table-mobile__price table-mobile__price--now">12 750 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="table-mobile__col table-mobile__col_sputnik">
+                    <h3 class="table-mobile__title table-mobile__title_sputnik">
+                      &laquo;Спутник&raquo; 2022
+                    </h3>
+                    <div class="table-mobile__image table-mobile__image_sputnik">
+                      <span class="table-mobile-icon-prev"></span>
+                      <img src="images/comprasion-sputnik.png" alt="image" />
+                      <span class="table-mobile-icon-next"></span>
+                    </div>
+                    <div class="table-mobile__text table-mobile__text_sputnik">
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Широкая горловина, в&nbsp;которую удобно засыпать песок.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Благодаря усовершенствованным каналам жиклера, их&nbsp;чистку можно делать прямо во&nbsp;время
+                          использования аппарата.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Удобная заглушка на&nbsp;баке, которую не&nbsp;нужно закручивать.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Есть быстросъёмное соединение для подачи воздуха. Всё быстро и&nbsp;удобно: никаких
+                          дополнительных штуцеров, не&nbsp;нужно снимать/надевать шланг и&nbsp;стягивать его хомутом.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          В&nbsp;комплекте шланг, утверждённый по&nbsp;ГОСТу и&nbsp;предназначенный специально для
+                          пескоструйных аппаратов.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Автоматический узел подачи, разработанный специально для работы с&nbsp;абразивами.
+                        </p>
+                      </div>
+                      <div class="table-mobile__text-inner">
+                        <span><img src="images/comprasion/check.svg" alt="icon" /></span>
+                        <p class="table-mobile__desc">
+                          Есть осушитель воздуха. Аппарат работает без перебоев и&nbsp;не&nbsp;&laquo;плюются&raquo;
+                          песком.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="table-mobile__prices table-mobile__prices_sputnik">
+                      <p class="table-mobile__info">по акции</p>
+                      <span class="table-mobile__price table-mobile__price--now table-mobile__price_green">11 750
+                        ₽</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="set">
+      <section class="set" id="set">
         <div class="container">
-          <h2 class="title set__title">Пескоструйный аппарат &laquo;Спутник&raquo; в&nbsp;деталях</h2>
+          <h2 class="title set__title">
+            Пескоструйный аппарат &laquo;Спутник&raquo; в&nbsp;деталях
+          </h2>
           <p class="set__subtitle">Мелочей не&nbsp;существует</p>
           <div class="set__content">
             <div class="set__image">
-              <img src="images/set-img.png" alt="image">
+              <img src="images/set-img.png" alt="image" />
             </div>
             <ul class="set__list">
-              <li data-fancybox class="set__item" href="#set__modal_1">
+              <li data-fancybox="set" class="set__item" href="#set__modal_1">
                 Быстросъёмные соединения на&nbsp;компрессор
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_2">
+              <li data-fancybox="set" class="set__item" href="#set__modal_2">
                 Осушитель воздуха
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_3">
+              <li data-fancybox="set" class="set__item" href="#set__modal_3">
                 Загрузочный бункер
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_4">
+              <li data-fancybox="set" class="set__item" href="#set__modal_4">
                 Шланг подачи абразива
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_5">
+              <li data-fancybox="set" class="set__item" href="#set__modal_5">
                 Пистолет
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_6">
+              <li data-fancybox="set" class="set__item" href="#set__modal_6">
                 Манометр
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_7">
+              <li data-fancybox="set" class="set__item" href="#set__modal_7">
                 Аварийный клапан
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_8">
+              <li data-fancybox="set" class="set__item" href="#set__modal_8">
                 Кран для перекрытия давления
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_9">
+              <li data-fancybox="set" class="set__item" href="#set__modal_9">
                 Распределительный узел
               </li>
-              <li data-fancybox class="set__item" href="#set__modal_10">
+              <li data-fancybox="set" class="set__item" href="#set__modal_10">
                 Колёса
               </li>
             </ul>
@@ -646,199 +1206,242 @@
         </div>
         <div class="set__modal set-modal set__modal_1" id="set__modal_1">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Быстросъёмные соединения на&nbsp;компрессор</h4>
-            <ul>
-              <li>Обеспечивают моментальное подключение и&nbsp;отключение компрессора от&nbsp;пескоструйного аппарата.</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img1.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">
+                Быстросъёмные соединения на&nbsp;компрессор
+              </h4>
+              <p class="set-modal__desc">
+                Обеспечивают моментальное подключение и&nbsp;отключение
+                компрессора от&nbsp;пескоструйного аппарата.
+              </p>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_2" id="set__modal_2">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Осушитель воздуха</h4>
-            <ul>
-              <li>Регулирует подачу воздуха в&nbsp;бункер;</li>
-              <li>предварительно очищает воздух от&nbsp;лишней влаги;</li>
-              <li>регулирует давление в&nbsp;пескоструе</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img2.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Осушитель воздуха</h4>
+              <ul>
+                <li>Регулирует подачу воздуха в&nbsp;бункер;</li>
+                <li>предварительно очищает воздух от&nbsp;лишней влаги;</li>
+                <li>регулирует давление в&nbsp;пескоструе</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_3" id="set__modal_3">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Загрузочный бункер</h4>
-            <p class="set-modal__desc">
-              Иными словами&nbsp;&mdash; бак, в&nbsp;который засыпается песок и&nbsp;накачивается давление.
-            </p>
-            <ul>
-              <li>Изготовлен из&nbsp;высококачественной углеродистой стали;</li>
-              <li>имеет объём 10/20/30&nbsp;л.</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img3.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Загрузочный бункер</h4>
+              <p class="set-modal__desc">
+                Иными словами&nbsp;&mdash; бак, в&nbsp;который засыпается песок
+                и&nbsp;накачивается давление.
+              </p>
+              <ul>
+                <li>
+                  Изготовлен из&nbsp;высококачественной углеродистой стали;
+                </li>
+                <li>имеет объём 10/20/30&nbsp;л.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_4" id="set__modal_4">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">ГОСТовский напорный рукав высокого давления</h4>
-            <p class="set-modal__desc">
-              Передаёт воздух и&nbsp;воздушно-песочную смесь.
-            </p>
-            <ul>
-              <li>Выдерживает давление 8&nbsp;атм;</li>
-              <li>устойчив к&nbsp;кислотной и&nbsp;щелочной среде;</li>
-              <li>имеет трёхслойные напорные рукава из&nbsp;резины.</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img4.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">
+                ГОСТовский напорный рукав высокого давления
+              </h4>
+              <p class="set-modal__desc">
+                Передаёт воздух и&nbsp;воздушно-песочную смесь.
+              </p>
+              <ul>
+                <li>Выдерживает давление 8&nbsp;атм;</li>
+                <li>устойчив к&nbsp;кислотной и&nbsp;щелочной среде;</li>
+                <li>имеет трёхслойные напорные рукава из&nbsp;резины.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_5" id="set__modal_5">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Пистолет</h4>
-            <p class="set-modal__desc">
-              Контролирует подачу воздушно-песочной смеси.
-            </p>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img5.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Пистолет</h4>
+              <p class="set-modal__desc">
+                Контролирует подачу воздушно-песочной смеси.
+              </p>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_6" id="set__modal_6">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Радиальный манометр</h4>
-            <p class="set-modal__desc">
-              Прибор, который показывает давление в&nbsp;замкнутом пространстве.
-            </p>
-            <ul>
-              <li>Делает безошибочные замеры;</li>
-              <li>контролирует давление;</li>
-              <li>имеет точность показаний 0,25&nbsp;МПа.</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img6.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Радиальный манометр</h4>
+              <p class="set-modal__desc">
+                Прибор, который показывает давление в&nbsp;замкнутом
+                пространстве.
+              </p>
+              <ul>
+                <li>Делает безошибочные замеры;</li>
+                <li>контролирует давление;</li>
+                <li>имеет точность показаний 0,25&nbsp;МПа.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_7" id="set__modal_7">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Аварийный клапан</h4>
-            <p class="set-modal__desc">
-              Обеспечивает безопасное использование пескоструя, срабатывает при достижении давления 8&nbsp;бар.
-            </p>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img7.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Аварийный клапан</h4>
+              <p class="set-modal__desc">
+                Обеспечивает безопасное использование пескоструя, срабатывает
+                при достижении давления 8&nbsp;бар.
+              </p>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_8" id="set__modal_8">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Перекрывающий кран</h4>
-            <p class="set-modal__desc">
-              Сохраняет давления внутри загрузочного бункера.
-            </p>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img8.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Перекрывающий кран</h4>
+              <p class="set-modal__desc">
+                Сохраняет давления внутри загрузочного бункера.
+              </p>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_9" id="set__modal_9">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Распределительный узел</h4>
-            <ul>
-              <li>Автоматический контроль подачи песка из&nbsp;загрузочного бункера;</li>
-              <li>предоставление возможности лёгкой и&nbsp;быстрой чистки жиклера (канала подачи песка);</li>
-              <li>предотвращение накопления песка в&nbsp;шланге.</li>
-            </ul>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img9.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Распределительный узел</h4>
+              <ul>
+                <li>
+                  Автоматический контроль подачи песка из&nbsp;загрузочного
+                  бункера;
+                </li>
+                <li>
+                  предоставление возможности лёгкой и&nbsp;быстрой чистки
+                  жиклера (канала подачи песка);
+                </li>
+                <li>предотвращение накопления песка в&nbsp;шланге.</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="set__modal set-modal set__modal_10" id="set__modal_10">
           <div class="set-modal__inner">
-            <h4 class="set-modal__title">Колёсики</h4>
-            <p class="set-modal__desc">
-              В&nbsp;конструкцию входят два колеса, присоединённых к&nbsp;раме. Они с&nbsp;лёгкостью перемещают пескоструй практически по&nbsp;любой местности.
-            </p>
+            <span data-fancybox-prev class="set-modal-icon-prev">
+              <img src="images/arrow-prev.svg" alt="icon">
+            </span>
+            <span data-fancybox-next class="set-modal-icon-next">
+              <img src="images/arrow-next.svg" alt="icon">
+            </span>
+            <div class="set-modal__text">
+              <div class="set-modal__images">
+                <img src="images/set/set-modal-img10.png" alt="image">
+              </div>
+              <h4 class="set-modal__title">Колёсики</h4>
+              <p class="set-modal__desc">
+                В&nbsp;конструкцию входят два колеса, присоединённых
+                к&nbsp;раме. Они с&nbsp;лёгкостью перемещают пескоструй
+                практически по&nbsp;любой местности.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="information">
+      <section class="goods" id="goods">
         <div class="container">
-          <h2 class="title information__title">Создано профессионалами!</h2>
-          <ul class="list-reset information__list information-list">
-            <li class="information-list__item information-list__item_1">
-              <div class="information-list__content">
-                <h3 class="information-list__title">Контролируйте ситуацию</h3>
-                <h5 class="information-list__name">Уникальная система управления</h5>
-                <p class="information-list__desc">
-                  <span>&laquo;Спутник&raquo; позволяет регулировать давление сразу в&nbsp;двух местах:</span>
-                  в&nbsp;баке и&nbsp;самой системе. <span>Бак контролируется при помощи крана</span>, который фиксирует
-                  уже имеющееся давление в&nbsp;бункере и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую.
-                </p>
-                <p class="information-list__desc">
-                  <span>Компрессор при этом можно легко отключить и&nbsp;использовать в&nbsp;других целях.</span>
-                  Давление в&nbsp;системе регулируется через осушитель.
-                </p>
-              </div>
-            </li>
-            <li class="information-list__item information-list__item_left information-list__item_2">
-              <div class="information-list__content">
-                <h3 class="information-list__title">Забудьте про воронку</h3>
-                <h5 class="information-list__name">Удобная форма верхней части бака</h5>
-                <p class="information-list__desc">
-                  Если горлышко на&nbsp;баке маленькое и&nbsp;узкое, наполнить бункер абразивом и&nbsp;ничего
-                  не&nbsp;просыпать возможно только с&nbsp;помощью воронки.
-                </p>
-                <p class="information-list__desc">
-                  <span>Благодаря новой форме пескоструя &laquo;Спутник&raquo; абразив попадает внутрь без
-                    дополнительных приспособлений.</span>
-                </p>
-              </div>
-            </li>
-            <li class="information-list__item information-list__item_3">
-              <div class="information-list__content">
-                <h3 class="information-list__title">Неудобствам &laquo;крышка&raquo;</h3>
-                <h5 class="information-list__name">Легко крепится и&nbsp;снимается</h5>
-                <p class="information-list__desc">
-                  При узкой горловине пескоструйного аппарата абразив постоянно остаётся на&nbsp;резьбе, что приводит
-                  к&nbsp;быстрому износу. <span>Крышка &laquo;Спутника&raquo; имеет совершенно новую конструкцию
-                    и&nbsp;прижимается за&nbsp;счёт давления в&nbsp;баке.</span> Это гарантирует:
-                </p>
-                <ul>
-                  <li>долгий срок службы</li>
-                  <li>лёгкий и&nbsp;быстрый монтаж/демонтаж</li>
-                  <li>надёжное, герметичное соединение.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="information-list__item information-list__item_left information-list__item_4">
-              <div class="information-list__content">
-                <h3 class="information-list__title">Надёжность по&nbsp;ГОСту</h3>
-                <h5 class="information-list__name">Манометр и&nbsp;клапан сброса давления по&nbsp;ГОСТу</h5>
-                <p class="information-list__desc">
-                  Пескоструй работает под давлением 4-8&nbsp;атм.<br>
-                  Безопасность работы обеспечивают:
-                </p>
-                <ul>
-                  <li>спускной клапан на&nbsp;8&nbsp;атм. ГОСТ 31294-2005, сертифицирован.</li>
-                  <li>манометр на&nbsp;10&nbsp;атм Класс точности 2,5.</li>
-                </ul>
-                <p class="information-list__desc">
-                  <span>Оборудование проверяют на&nbsp;стендах высокого давления квалифицированные специалисты. Все
-                    этапы проверки регламентированы.</span>
-                </p>
-              </div>
-            </li>
-            <li class="information-list__item information-list__item_5">
-              <div class="information-list__content">
-                <h3 class="information-list__title">Ваша новая &laquo;правая рука&raquo;</h3>
-                <h5 class="information-list__name">Специальный кран для перекрытия давления</h5>
-                <p class="information-list__desc">
-                  Представьте, что во&nbsp;время работы с&nbsp;пескоструем, компрессор пригодился где-то в&nbsp;другом
-                  месте? А&nbsp;может, вам срочно понадобилось отлучиться?<br>
-                  <span>Специальный кран на&nbsp;баке зафиксирует уже имеющееся давление в&nbsp;бункере
-                    и&nbsp;не&nbsp;позволит воздуху выйти наружу впустую.</span>
-                </p>
-                <p class="information-list__desc">
-                  Просто поверните вентиль и&nbsp;продолжайте работать ещё несколько минут при отключённой подаче
-                  воздуха. <span>Это удобно, а&nbsp;главное&nbsp;&mdash; совершенно безопасно.</span>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-      <section class="goods">
-        <div class="container">
-          <h2 class="title goods__title">&laquo;Спутник&raquo; на&nbsp;любой случай!</h2>
+          <h2 class="title goods__title">
+            &laquo;Спутник&raquo; на&nbsp;любой случай!
+          </h2>
           <p class="goods__subtitle">Выберите свой пескоструй</p>
           <ul class="list-reset goods__list goods-list">
             <li class="goods-list__item goods-list__item_1">
               <div class="goods-list__image">
-                <img src="images/goods/goods-img1.png" alt="image">
+                <img src="images/goods/goods-img1.png" alt="image" />
               </div>
               <div class="goods-list__info">
                 <h3 class="goods-list__liters">Спутник, 18&nbsp;литров</h3>
@@ -869,7 +1472,7 @@
             </li>
             <li class="goods-list__item goods-list__item_2">
               <div class="goods-list__image">
-                <img src="images/goods/goods-img2.png" alt="image">
+                <img src="images/goods/goods-img2.png" alt="image" />
               </div>
               <div class="goods-list__info">
                 <h3 class="goods-list__liters">Спутник, 24&nbsp;литров</h3>
@@ -900,7 +1503,7 @@
             </li>
             <li class="goods-list__item goods-list__item_3 goods-list__item_red">
               <div class="goods-list__image">
-                <img src="images/goods/goods-img3.png" alt="image">
+                <img src="images/goods/goods-img3.png" alt="image" />
               </div>
               <div class="goods-list__info">
                 <h3 class="goods-list__liters">Спутник, 30&nbsp;литров</h3>
@@ -933,18 +1536,22 @@
         </div>
       </section>
 
-      <section class="kit">
+      <section class="kit" id="kit">
         <div class="container">
           <h2 class="title kit__title">В&nbsp;работе может вам помочь</h2>
           <ul class="list-reset kit__list kit-list">
             <li class="kit-list__item">
               <div class="kit-list__image">
-                <img src="images/kit/kit-img.png" alt="image">
+                <img src="images/kit/kit-img.png" alt="image" />
               </div>
               <div class="kit-list__info">
-                <h3 class="kit-list__name">Универсальное сито для абразива</h3>
+                <h3 class="kit-list__name">
+                  Универсальное сито для абразива
+                </h3>
                 <p class="kit-list__desc">
-                  Для того, чтобы ваш пескоструй прослужил действительно долго, необходимо просеивать абразив, который попадает в&nbsp;бункер. В&nbsp;этом вам легко поможет сито.
+                  Для того, чтобы ваш пескоструй прослужил действительно
+                  долго, необходимо просеивать абразив, который попадает
+                  в&nbsp;бункер. В&nbsp;этом вам легко поможет сито.
                 </p>
                 <p class="kit-list__desc">
                   <span>Характеристики:</span>
@@ -968,263 +1575,66 @@
         </div>
       </section>
 
-      <!-- <section class="desiccant-work">
-        <div class="container">
-          <h2 class="title desiccant-work__title">Совершенство в&nbsp;деталях</h2>
-          <p class="desiccant-work__subtitle">Бесперебойная работа, благодаря встроенному осушителю воздуха</p>
-          <div class="desiccant-work__content">
-            <div class="desiccant-work__image">
-              <video autoplay="autoplay" loop="" preload="auto" muted="">                 
-                <source src="video/desiccant-work-video.mp4" type="video/mp4">            
-              </video>
-            </div>
-            <div class="desiccant-work__info">
-              <p class="desiccant-work__desc">
-                <span>Пескоструи без влагоотделителя работают рывками и&nbsp;&laquo;плюются&raquo; песком.</span>
-                Причина&nbsp;&mdash; конденсат, который скапливается внутри аппарата. Абразив становится влажным, липнет
-                к&nbsp;смесителям и&nbsp;тройникам, мешает работе. Оборудование приходится разбирать и&nbsp;чистить.
-              </p>
-              <p class="desiccant-work__desc">
-                <span>На&nbsp;пескоструй &laquo;Спутник&raquo; установлен осушитель воздуха AFR-2000.</span>
-                Он&nbsp;собирает конденсат в&nbsp;специальную ёмкость. <span>Песок остаётся сухим, и&nbsp;аппарат
-                  не&nbsp;&laquo;плюётся&raquo;.</span>
-              </p>
-              <ul>
-                <li>Работает при температуре 5-60&deg;С;</li>
-                <li>давление до&nbsp;10&nbsp;атм.</li>
-              </ul>
-              <p class="desiccant-work__desc">
-                <span>Осушитель воздуха&nbsp;&mdash; признак профессионального пескоструя.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="ease-of-parsing">
-        <div class="container">
-          <div class="ease-of-parsing__content">
-            <div class="ease-of-parsing__info">
-              <h2 class="title ease-of-parsing__title">Проще детского конструктора</h2>
-              <p class="ease-of-parsing__subtitle">Сборка и&nbsp;разборка &laquo;Спутника&raquo; не&nbsp;займёт
-                и&nbsp;пяти минут!</p>
-              <p class="ease-of-parsing__desc">
-                <span>Инструкция идёт в&nbsp;комплекте!</span> Однако все детали пескоструйного аппарата настолько
-                просты, а&nbsp;способ крепления комплектующих понятен, что <span>вы&nbsp;легко сможете обойтись без
-                  сложных схем и&nbsp;чертежей.</span>
-              </p>
-            </div>
-            <div class="ease-of-parsing__image">
-              <img src="images/ease-of-parsing-img.png" alt="image">
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="profit">
-        <div class="container">
-          <h2 class="title profit__title">Выгода на&nbsp;лицо</h2>
-          <ul class="list-reset profit__list profit-list">
-            <li class="profit-list__item profit-list__item_left">
-              <div class="profit-list__inner">
-                <div class="profit-list__info">
-                  <h3 class="profit-list__name">Сопло из&nbsp;керамики</h3>
-                  <p class="profit-list__desc">
-                    В&nbsp;комплекте с&nbsp;пескоструйным аппаратом идёт керамическое сопло диаметром 2&nbsp;мм,
-                    <span>обладает внушительными характеристиками:</span>
-                  </p>
-                  <ul>
-                    <li>повышенная износостойкость;</li>
-                    <li>подходит для всех абразивов;</li>
-                    <li>крепится под прижимную гайку;</li>
-                    <li>с&nbsp;помощью конического диффузора равномерно;</li>
-                    <li>распределяет абразив по&nbsp;рабочей поверхности.</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="profit-list__item profit-list__item_right">
-              <div class="profit-list__inner">
-                <div class="profit-list__info">
-                  <h3 class="profit-list__name">Гарантия 2&nbsp;года</h3>
-                  <p class="profit-list__desc">
-                    Пескоструйные аппараты производят на&nbsp;современном заводском оборудовании.<br>
-                    <span>Ни&nbsp;один пескоструй не&nbsp;отправится к&nbsp;покупателю без 3&nbsp;уровней проверки ОТК:
-                    </span>
-                  </p>
-                  <ul>
-                    <li>при получении с&nbsp;производства (проверка давлением); </li>
-                    <li>на&nbsp;складе (проверка качетва);</li>
-                    <li>при отправке клиенту (проверка комплектации).</li>
-                  </ul>
-                  <p class="profit-list__desc">
-                    Расширенная гарантия&nbsp;&mdash; 24&nbsp;месяца. Высокое качество. Без брака. Декларация о
-                    соответствии N&nbsp;RU&nbsp;Д-RU.НА66.В.06753/20. Зарегистрирована в&nbsp;реестре РОСАККРЕДИТАЦИИ.
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-      <!-- <section class="main-video">
-        <div class="container">
-          <h2 class="title main-video__title">Видеообзор пескоструя</h2>
-          <div class="main-video__video video">
-            <a class="video__item" data-fancybox="https://youtu.be/hxnDGLULAjM" href="https://youtu.be/hxnDGLULAjM">
-              <div class="video__container main-video__video-container">
-                <div class="video__link">
-                  <picture>
-                    <source class="" type="image/webp" data-src="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp"
-                      srcset="https://i.ytimg.com/vi_webp/hxnDGLULAjM/hqdefault.webp">
-                    <img class="video__media" data-src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg" alt="video"
-                      src="https://i.ytimg.com/vi/hxnDGLULAjM/hqdefault.jpg">
-                  </picture>
-                </div>
-                <button class="btn-reset video__btn">
-                  <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
-                    <path class="shape ytp-large-play-button-bg"
-                      d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                      fill="#212121" fill-opacity="0.8"></path>
-                    <path d="M 45,24 27,14 27,34" fill="#fff"></path>
-                  </svg>
-                </button>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- <section class="opportunities">
-        <div class="container opportunities__container">
-          <div class="opportunities__info">
-            <h2 class="title opportunities__title">Один аппарат&nbsp;&mdash; множество задач</h2>
-            <p class="opportunities__subtitle">Для гаража и&nbsp;автосервиса</p>
-            <p class="opportunities__desc">
-              С&nbsp;пескоструем &laquo;Спутник&raquo; вы&nbsp;сможете:
-            </p>
-            <ul>
-              <li>очистить ржавчину</li>
-              <li>снять старый лак и&nbsp;краску</li>
-              <li>подготовить поверхности к&nbsp;покраске и&nbsp;антикоррозийной обработке</li>
-              <li>избавиться от&nbsp;гари и&nbsp;граффити на&nbsp;стенах </li>
-              <li>матировать стекло</li>
-              <li>сделать гравировку на&nbsp;зеркалах</li>
-            </ul>
-            <p class="opportunities__desc">
-              <span>Пескоструй работает с&nbsp;компрессором производительностью от&nbsp;100
-                до&nbsp;700&nbsp;л/мин.</span><br>
-              Режим для матирования стекла&nbsp;&mdash; 200-350&nbsp;л/мин. Для удаления краски, ржавчины
-              и&nbsp;нагара&nbsp;&mdash; 600-700&nbsp;л/мин. Покрытый ржавчиной автомобильный диск
-              на&nbsp;15&nbsp;дюймов очищается за&nbsp;10-15&nbsp;минут.
-            </p>
-          </div>
-          <div class="opportunities__image">
-            <img src="images/opportunities-img.png" alt="image">
-          </div>
-        </div>
-      </section> -->
-
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="title gallery__title">Реальные фото</h2>
           <div class="gallery__inner">
             <div class="gallery__items">
               <div class="gallery__item gallery__item_1">
-                <img src="images/gallery/gallery-1.jpg" alt="image">
+                <a data-fancybox="gallery" href="images/gallery/gallery-big-1.jpg">
+                  <img src="images/gallery/gallery-1.jpg" alt="image" />
+                </a>
               </div>
               <div class="gallery__item gallery__item_2">
-                <img src="images/gallery/gallery-2.jpg" alt="image">
+                <a data-fancybox="gallery" href="images/gallery/gallery-big-2.jpg">
+                  <img src="images/gallery/gallery-2.jpg" alt="image" />
+                </a>
               </div>
               <div class="gallery__item gallery__item_3">
-                <img src="images/gallery/gallery-3.jpg" alt="image">
+                <a data-fancybox="gallery" href="images/gallery/gallery-big-3.jpg">
+                  <img src="images/gallery/gallery-3.jpg" alt="image" />
+                </a>
               </div>
               <div class="gallery__item gallery__item_4">
-                <img src="images/gallery/gallery-4.jpg" alt="image">
+                <a data-fancybox="gallery" href="images/gallery/gallery-big-4.jpg">
+                  <img src="images/gallery/gallery-4.jpg" alt="image" />
+                </a>
               </div>
               <div class="gallery__item gallery__item_5">
-                <img src="images/gallery/gallery-5.jpg" alt="image">
+                <a data-fancybox="gallery" href="images/gallery/gallery-big-5.jpg">
+                  <img src="images/gallery/gallery-5.jpg" alt="image" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="features">
-        <div class="container">
-          <ul class="list-reset features__list">
-            <li class="features__list-item">
-              <span class="features__list-icon">
-                <img src="images/features/delivery.svg" alt="icon">
-              </span>
-              <div class="features__list-inner">
-                <div class="features__list-title">
-                  Доставка по всей России
-                </div>
-                <div class="features__list-desc">
-                  От 1 до 7 дней (по Москве, МО и Санкт-Петербургу - 1 день)
-                </div>
-              </div>
-            </li>
-            <li class="features__list-item">
-              <span class="features__list-icon">
-                <img src="images/features/cash-withdrawal.svg" alt="icon">
-              </span>
-              <div class="features__list-inner">
-                <div class="features__list-title">Оплата при получении</div>
-                <div class="features__list-desc">
-                  Курьеру или на почте.<br>
-                  Вы ничем не рискуете.
-                </div>
-              </div>
-            </li>
-            <li class="features__list-item">
-              <span class="features__list-icon">
-                <img src="images/features/certificate.svg" alt="icon">
-              </span>
-              <div class="features__list-inner">
-                <div class="features__list-title">Срок службы - 10 лет</div>
-                <div class="features__list-desc">
-                  Расширенная гарантия от
-                  производителя
-                </div>
-              </div>
-            </li>
-            <li class="features__list-item">
-              <span class="features__list-icon">
-                <img src="images/features/parcel.svg" alt="icon">
-              </span>
-              <div class="features__list-inner">
-                <div class="features__list-title">Всегда в наличии</div>
-                <div class="features__list-desc">
-                  Отправляем в день заказа
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
-
-      <section class="manufacturer">
+      <section class="manufacturer" id="manufacturer">
         <div class="container manufacturer__container">
           <h2 class="manufacturer__title">
-            Вы заказываете пескоструй <span class="yellow">напрямую с завода!</span><br><br>
+            Вы заказываете пескоструй
+            <span class="yellow">напрямую с завода!</span><br /><br />
             <span>Для вас это означает:</span>
           </h2>
           <ul class="list-reset manufacturer__list">
             <li class="manufacturer__item">
-              Вы&nbsp;<span>не&nbsp;переплачиваете</span> перекупам, а&nbsp;значит, <span>экономите</span>
+              Вы&nbsp;<span>не&nbsp;переплачиваете</span> перекупам,
+              а&nbsp;значит, <span>экономите</span>
             </li>
             <li class="manufacturer__item">
-              Трубогибы всегда в&nbsp;наличии, а&nbsp;значит, <span>отправка произойдет незамедлительно</span>
+              Пескоструи всегда в&nbsp;наличии, а&nbsp;значит,
+              <span>отправка произойдет незамедлительно</span>
             </li>
             <li class="manufacturer__item">
-              Вся продукция проходит отдел ОТК&nbsp;&mdash; <span>брак исключён</span>
+              Вся продукция проходит отдел ОТК&nbsp;&mdash;
+              <span>брак исключён</span>
             </li>
             <li class="manufacturer__item">
-              Мы&nbsp;работаем в&nbsp;соответствии с&nbsp;российским законодательством, а&nbsp;это<br>
-              значит, что <span>все наши гарантии зафиксированы в&nbsp;<a href="uploadupdate/oferta-rus.pdf"
+              Мы&nbsp;работаем в&nbsp;соответствии с&nbsp;российским
+              законодательством, а&nbsp;это<br />
+              значит, что
+              <span>все наши гарантии зафиксированы в&nbsp;<a href="uploadupdate/oferta-rus.pdf"
                   target="_blank">"договоре"</a></span>
             </li>
           </ul>
@@ -1237,25 +1647,16 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="images/reviews/reviews-1.jpg" alt="image">
+                <img src="images/reviews/reviews-1.jpg" alt="image" />
               </div>
               <div class="swiper-slide">
-                <img src="images/reviews/reviews-2.jpg" alt="image">
+                <img src="images/reviews/reviews-2.jpg" alt="image" />
               </div>
               <div class="swiper-slide">
-                <img src="images/reviews/reviews-3.jpg" alt="image">
+                <img src="images/reviews/reviews-3.jpg" alt="image" />
               </div>
               <div class="swiper-slide">
-                <img src="images/reviews/reviews-4.jpg" alt="image">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/reviews/reviews-5.jpg" alt="image">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/reviews/reviews-6.jpg" alt="image">
-              </div>
-              <div class="swiper-slide">
-                <img src="images/reviews/reviews-7.jpg" alt="image">
+                <img src="images/reviews/reviews-4.jpg" alt="image" />
               </div>
             </div>
           </div>
@@ -1268,16 +1669,16 @@
         <div class="container delivery__container">
           <div class="delivery__col">
             <div class="delivery__image">
-              <img src="images/delivery-bg.png" alt="image">
+              <img src="images/delivery-bg.png" alt="image" />
             </div>
             <div class="delivery__info">
               <div class="delivery__company">
-                <img src="images/cdek-logo.png" alt="image">
-                <img src="images/dpd-logo.png" alt="image">
-                <img src="images/pochta-rossii-logo.png" alt="image">
+                <img src="images/cdek-logo.png" alt="image" />
+                <img src="images/dpd-logo.png" alt="image" />
+                <img src="images/pochta-rossii-logo.png" alt="image" />
               </div>
               <ul class="list-reset delivery__list">
-                Транспортной компанией или почтой.<br>
+                Транспортной компанией или почтой.<br />
                 Курьером в&nbsp;пункт выдачи или прямо домой.
                 <li class="delivery__item">проверка перед оплатой</li>
                 <li class="delivery__item">оплата при получении</li>
@@ -1287,43 +1688,50 @@
           <div class="delivery__col">
             <h2 class="title delivery__title">Доставка и&nbsp;оплата</h2>
             <p class="delivery__subtitle">
-              Закажите трубогиб с&nbsp;удобной доставкой: в&nbsp;отделение почты, ближайший пункт выдачи или
-              прямо до&nbsp;двери
+              Закажите трубогиб с&nbsp;удобной доставкой: в&nbsp;отделение
+              почты, ближайший пункт выдачи или прямо до&nbsp;двери
             </p>
             <div class="delivery__info-container"></div>
             <div class="delivery__price">
               <p class="delivery__price-text">
-                Примерная стоимость<br>
+                Примерная стоимость<br />
                 доставки по&nbsp;РФ&nbsp;<span>400-800₽</span>
               </p>
               <div class="delivery__price-icon">
-                <img src="images/delivery-icon1.svg" alt="icon">
+                <img src="images/delivery-icon1.svg" alt="icon" />
               </div>
             </div>
             <div class="delivery__price">
               <p class="delivery__price-text delivery__price-text--two">
-                Срок доставки<br>
+                Срок доставки<br />
                 от&nbsp;<span>2&nbsp;до&nbsp;7</span>&nbsp;дней
               </p>
               <div class="delivery__price-icon">
-                <img src="images/delivery-icon2.svg" alt="icon">
+                <img src="images/delivery-icon2.svg" alt="icon" />
               </div>
             </div>
             <p class="delivery__desc">
-              Чтобы узнать стоимость доставки, нажмите кнопку<br>
-              <span>&laquo;Рассчитать&raquo;</span>, заполните и&nbsp;отправьте форму
+              Чтобы узнать стоимость доставки, нажмите кнопку<br />
+              <span>&laquo;Рассчитать&raquo;</span>, заполните
+              и&nbsp;отправьте форму
             </p>
-            <button class="btn-reset btn delivery__btn fancybox" data-delivery="true">Рассчитать</button>
+            <button class="btn-reset btn delivery__btn fancybox" data-delivery="true">
+              Рассчитать
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="consultation">
+      <section class="consultation" id="consultation">
         <div class="container consultation__container">
           <h2 class="title consultation__title">Остались вопросы?</h2>
           <div class="consultation__btns">
-            <button class="btn-reset btn consultation__btn consultation__btn_green">Нет, все понятно, хочу сделать заказ</button>
-            <button class="btn-reset btn consultation__btn consultation__btn_orange">Да, хочу получить консультацию</button>
+            <button class="btn-reset btn consultation__btn consultation__btn_green">
+              Нет, все понятно, хочу сделать заказ
+            </button>
+            <button class="btn-reset btn consultation__btn consultation__btn_orange">
+              Да, хочу получить консультацию
+            </button>
           </div>
         </div>
       </section>
@@ -1331,12 +1739,17 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <ul class="list-reset footer__list">
-          <li class="footer__item">ИП&nbsp;Гайнутдинов А.Н.</li>
-          <li class="footer__item">ИНН 432500888349</li>
-          <li class="footer__item">ОГРНИП 314744919000039</li>
-          <li class="footer__item">610000, г. Киров, а/я &#8470;&nbsp;154</li>
-        </ul>
+        <div class="footer__left">
+          <div class="footer__image">
+            <img src="images/logo.png" alt="image">
+            <span class="logo__text footer-logo__text">Официальный сайт производителя</span>
+          </div>
+          <ul class="list-reset footer__list">
+            <li class="footer__item">ИНН 432500888349</li>
+            <li class="footer__item">ОГРНИП 314744919000039</li>
+            <li class="footer__item">610000, г. Киров, а/я &#8470;&nbsp;154</li>
+          </ul>
+        </div>
         <div class="footer-phone">
           <a class="footer-phone__link" href="tel:+78002505932">8 800 250 59 32</a>
           <p class="footer-phone__desc">телефон горячей линии</p>

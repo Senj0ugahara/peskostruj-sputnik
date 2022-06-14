@@ -45,12 +45,15 @@
 @media (max-width: 1549px) {
   .hero {
     &__image {
-      position: inherit;
-      width: auto;
+      right: 0;
+      width: 50%;
+    }
+
+    &__content {
+      margin-left: 0;
     }
 
     &__info {
-      max-width: 700px;
       margin-bottom: 50px;
     }
   }
@@ -87,6 +90,10 @@
     }
   }
 
+  .table {
+    width: 100%;
+  }
+
   .video-reviews {
     &__item {
       margin-bottom: 50px;
@@ -101,22 +108,6 @@
     }
   }
 
-  .table {
-    width: 100%;
-  }
-
-  .information-list {
-    &__item {
-      max-width: none;
-      width: 100%;
-      padding: 70px;
-    }
-
-    &__content {
-      max-width: 600px;
-    }
-  }
-
   .kit-list {
     &__item {
       padding: 40px 70px;
@@ -124,18 +115,6 @@
 
     &__info {
       width: 60%;
-    }
-  }
-
-  .ease-of-parsing {
-    &__content {
-      padding: 70px;
-    }
-  }
-
-  .profit-list {
-    &__inner {
-      padding: 30px 40px;
     }
   }
 
@@ -164,6 +143,18 @@
 }
 
 @media (max-width: 1439px) {
+  .main-title {
+    font-size: 40px;
+    line-height: 60px;
+
+    &-icon {
+      font-size: 40px;
+    }
+  }
+  .hero {
+    padding: 60px 0;
+  }
+
   .advantages-list {
     &__item {
       padding: 90px;
@@ -179,20 +170,6 @@
 
     &__liters {
       text-align: center;
-    }
-  }
-
-  .profit-list {
-    &__item {
-      &_right {
-        .profit-list__info {
-          max-width: 550px;
-        }
-      }
-    }
-
-    &__info {
-      max-width: 500px;
     }
   }
 
@@ -281,7 +258,7 @@
   }
 
   .hero {
-    background-size: cover;
+    background-image: none;
 
     &__info {
       max-width: none;
@@ -304,27 +281,91 @@
 
     &__list {
       margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
     }
 
-    &__discount {
-      background: #EAEAEA;
-      border-radius: 1px;
-      padding: 10px;
-      text-align: center;
+    &__item {
+      width: 100%;
+      align-self: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      &-icon {
+        width: 20%;
+      }
+    }
+
+    &__buy {
+      justify-content: center;
     }
   }
 
-  .information-list {
+  .advantages {
+    &__btn {
+      padding: 0 30px 30px;
+
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .advantages-list {
     &__item {
-      background-size: 20%;
+      flex-direction: column;
+      padding: 0;
+      background-image: none!important;
+      background-color: transparent;
+      box-shadow: none;
 
-      &_4 {
-        background-position: left bottom;
+      &:not(:last-child) {
+        margin-bottom: 70px;
       }
+    }
 
-      &_5 {
-        background-position: right bottom;
+    &__image_mobile {
+      display: block;
+      width: 100%; 
+      margin-bottom: 20px;
+      background-color: #f0f0f0;
+    }
+
+    &__info {
+      width: 100%;
+      text-align: left!important;
+    }
+
+    &__subheading {
+      margin-bottom: 20px;
+      padding-bottom: 10px; 
+      border-bottom: 1px solid var(--text-color);
+    }
+
+    &__text {
+      max-width: none;
+      margin-left: 0!important;
+
+      &_not-max-width {
+        ul {
+          display: block;
+        }
       }
+    }
+  }
+
+  .table {
+    &__title {
+      padding: 15px 20px 15px 30px;
+      vertical-align: middle!important;
+      font-size: 24px;
+    }
+
+    &__desc {
+      font-size: 18px;
     }
   }
 
@@ -358,79 +399,9 @@
     }
   }
 
-  .profit-list {
-    &__item {
-      &_left {
-        &::after {
-          top: -30px;
-          width: 400px;
-          height: 400px;
-        }
-
-        &::before {
-          top: -7px;
-          width: 354px;
-          height: 354px;
-          background-size: contain;
-        }
-      }
-
-      &_right {
-        &::after {
-          top: -20px;
-          width: 482px;
-          height: 482px;
-        }
-
-        &::before {
-          top: 3px;
-          width: 436px;
-          height: 436px;
-          background-size: contain;
-        }
-      }
-    }
-
-    &__inner {
-      max-width: 670px;
-      padding: 30px;
-    }
-
-    &__info {
-      max-width: 450px!important;
-    }
-
-    &__desc {
-      line-height: 22px;
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-    }
-
-    ul {
-      margin-bottom: 10px;
-    }
-  }
-
-  .main-video {
-    &__video {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
   .gallery {
     &__items{
       grid-template-rows: repeat(3, 115px);
-    }
-  }
-
-  .features {
-    &__list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 30px;
     }
   }
 
@@ -483,6 +454,20 @@
     line-height: 50px;
   }
 
+  .advantages {
+    &__buttons {
+      background-image: none;
+    }
+  }
+
+  .table {
+    display: none;
+  }
+
+  .comparison__table-mobile {
+    display: block;
+  }
+
   .base-information {
     &__container {
       flex-direction: column;
@@ -499,6 +484,32 @@
 
     &__title {
       text-align: center;
+    }
+  }
+
+  .table {
+    &__title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 20px;
+
+      .big {
+        font-size: 20px;
+      }
+    }
+
+    &__info {
+      font-size: 26px;
+    }
+
+    &__price {
+      span {
+        font-size: 40px!important;
+      }
     }
   }
 
@@ -520,12 +531,6 @@
     }
   }
 
-  .information-list {
-    &__item {
-      background: none;
-    }
-  }
-
   .kit-list {
     &__item {
       flex-direction: column;
@@ -538,104 +543,6 @@
     }
 
     &__info {
-      width: 100%;
-    }
-  }
-
-  .desiccant-work {
-    &__content {
-      flex-direction: column;
-    }
-
-    &__image {
-      order: 2;
-      width: 100%;
-    }
-
-    &__info {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  }
-
-  .ease-of-parsing {
-    &__content {
-      flex-direction: column;
-      padding: 30px;
-    }
-
-    &__info {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-
-    &__image {
-      width: 100%;
-    }
-  }
-
-  .profit-list {
-    &__item {
-      max-width: none;
-      max-height: none;
-
-      &::after {
-        display: none;
-      }
-
-      &::before {
-        width: 100%;
-        height: 100%;
-        background-size: 25%;
-      }
-
-      &_left {
-        &::before {
-          top: 0;
-          left: 0;
-          background-position: bottom 20px center;
-        }
-      }
-
-      &_right {
-        &::before {
-          top: 0;
-          right: 0;
-          background-position: bottom 20px center;
-        }
-      }
-    }
-
-    &__inner {
-      max-width: none;
-      padding: 30px 30px 200px;
-    }
-
-    &__info {
-      max-width: none!important;
-      margin-left: 0!important;
-    }
-  }
-
-  .opportunities {
-    &__container {
-      flex-direction: column;
-    }
-
-    &__info {
-      width: 100%;
-      margin: 0 0 30px;
-    }
-
-    &__title {
-      text-align: center;
-    }
-
-    &__subtitle {
-      text-align: center;
-    }
-
-    &__image {
       width: 100%;
     }
   }
@@ -701,7 +608,27 @@
 }
 
 @media (max-width: 767px) {
+  .main-title {
+    &-icon {
+      padding: 0 10px;
+      background: linear-gradient(49.49deg, #B32B34 0%, #DD2839 34.64%);
+      border-radius: 20px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+  
   .hero {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+      width: 100%;
+    }
+
     &__buy {
       flex-direction: column;
     }
@@ -715,57 +642,57 @@
     }
   }
 
-  .table {
-    &__col {
-      padding: 20px 0;
+  .advantages {
+    &__buttons {
+      display: block;
     }
 
-    &__text {
-      padding: 20px;
-    }
+    &__btn {
+      display: block;
+      padding: 0 0 20px;
+      margin: 0 auto;
 
-    &__desc { 
-      font-size: 16px;
-    }
-
-    &__price {
-      span {
-        font-size: 40px;
-        line-height: 50px;
+      &:not(:last-child) {
+        margin-right: auto;
+        margin-bottom: 30px;
       }
     }
   }
 
-  .information-list {
-    &__item {
-      padding: 40px;
-    }
-
-    &__title {
+  .advantages-list {
+    &__heading {
       font-size: 30px;
       line-height: 40px;
     }
 
-    &__name {
+    &__subheading {
+      font-size: 20px;
+      background-image: 30px;
+    }
+
+    &__text {
+      display: none;
       margin-bottom: 30px;
+
+      &_open {
+        display: block;
+      }
     }
 
     &__desc {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
-
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
     }
 
     ul {
-      margin-bottom: 20px;
-
       li {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
       }
+    }
+
+    &__btn {
+      display: block;
     }
   }
 
@@ -847,53 +774,11 @@
     line-height: 60px;
   }
 
-  .hero {
-    &__list {
-      grid-template-columns: repeat(1, 1fr);
-    }
-
-    &__item {
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
+  .base-information {
+    &__image {
+      video {
         width: 100%;
-        height: 1px;
-        background-image: none;
-        background: #A8A8A8;
       }
-    }
-  }
-
-  .table {
-    &__col {
-      width: 50%;
-      padding: 10px;
-    }
-
-    &__title {
-      font-size: 20px;
-      line-height: 30px;
-    }
-
-    &__text {
-      padding: 10px;
-
-      &-inner {
-        flex-direction: column;
-
-        span {
-          width: 100%;
-          margin-bottom: 10px;
-        }
-      }
-    }
-
-    &__desc {
-      width: 100%;
     }
   }
 
@@ -901,6 +786,25 @@
     &__list {
       align-items: flex-start;
     }
+  }
+
+  .set-modal {
+    &__ineer {
+      max-width: none;
+      height: auto;
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+
+  .set-modal-icon-prev {
+    left: 10px;
+  }
+
+  .set-modal-icon-next {
+    right: 10px;
   }
 
   .goods {
@@ -916,36 +820,12 @@
     }
   }
 
-  .profit-list {
-    &__item {
-      &::before {
-        display: none;
-      }
-    }
-
-    &__inner {
-      padding: 30px;
-    }
-  }
-
   .gallery {
     padding: 30px 0;
 
     &__items{
       gap: 5px;
       grid-template-rows: repeat(3, auto);
-    }
-  }
-
-  .features {
-    &__list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      &-item {
-        width: 328px;
-      }
     }
   }
 
@@ -1006,12 +886,6 @@
   .title {
     font-size: 30px;
     line-height: 40px;
-  }
-
-  .information-list {
-    &__item {
-      padding: 30px;
-    }
   }
 
   .goods-list {
